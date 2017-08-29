@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-ask.css">
+    <link rel="stylesheet" href="css/LArea.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+     <a href="" class="ask">&#xe613;退款申请</a>
+     <ul class="center-perfect">
+        <li class="perfect-row">
+            <span class="perfect-row-left">退款类型：</span>
+            <i>*</i>
+            <input type="radio" name="sex" class="perfect-row-radio" checked>
+            <span class="perfect-row-right">退全款</span><span class="firm">（与服务商协商好前提下）</span><br/>
+            <input type="radio" name="sex" class="perfect-row-radio">
+            <span class="perfect-row-right">部分退款</span><span class="firm">（与服务商协商好前提下）</span>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">退款原因：</span>
+            <i>*</i>
+            <div class="phone phone-select">
+                <span class="phone-text">请选择</span>
+                <div class="trigon">&#xe606;</div>
+                <ul class="choose-select">
+                    <li class="choose-option">
+                        <p>我不想买了</p>
+                    </li>
+                    <li class="choose-option">
+                        <p>服务商服务态度很差</p>
+                    </li>
+                    <li class="choose-option">
+                        <p>拍错产品</p>
+                    </li>
+                    <li class="choose-option">
+                        <p>服务商远远超出合同约定服务周期</p>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">服务类型：</span>
+            <i>*</i>
+            <input type="radio" name="start" class="perfect-row-radio" checked>
+            <span class="perfect-row-right null">未开始</span>
+            <input type="radio" name="start" class="perfect-row-radio">
+            <span class="perfect-row-right null">已开始</span>
+            <input type="radio" name="start" class="perfect-row-radio">
+            <span class="perfect-row-right null">已完成</span>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">退款金额：</span>
+            <i>*</i>
+            <input type="text" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" />
+        </li>
+        <li class="perfect-code-hint">最多￥<i class="money">39</i>，含邮费<i>0.00</i>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">退款说明：</span>
+            <i class="sky"></i>
+            <textarea name="" id="" cols="30" rows="10" placeholder="请填写退款说明（非必填）" maxlength="200"></textarea>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">上传凭证：</span>
+            <i class="sky"></i>
+            <div class="permit-all">
+                <p class="plus">+</p>
+                <p class="plus-file">上传凭证</p>
+                <div id="addCommodityIndex">
+                    <div class="input-group row">
+                        <div class="col-sm-9 big-photo">
+                            <div id="preview-permit">
+                                <img id="imghead-permit" border="0" src="" width="80" height="80" onclick="$('#previewImg-permit').click();">
+                             </div>         
+                            <input type="file" onchange="previewImage(this,'imghead-permit')" style="display: none;" id="previewImg-permit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="knob">
+        <a href="">提交申请</a>
+    </div>
+    <p class="put">尊敬的用户您已提交了对商品<span>有限公司注册</span>的退款申请，我们将尽快核实并进行退款处理，确保维护您的权益！</p>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+$(function(){
+    $(".phone-text").on("click",function(){
+        $(".choose-select").show();
+    })
+    $(".choose-option").on("click",function(){
+        $(this).parent(".choose-select").siblings(".phone-text").text($(this).text());
+        $(".choose-select").css('display','none');
+        
+    })
+})
+</script>
+<script>
+      //图片上传预览    IE是用了滤镜。
+        function previewImage(file,imgid)
+        {
+          var MAXWIDTH  = 80; 
+          var MAXHEIGHT = 80;
+//          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+//              div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+              var img = document.getElementById(imgid);
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+    </script>

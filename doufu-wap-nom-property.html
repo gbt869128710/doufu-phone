@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-property.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <i>余额</i>
+            <i>交易记录<sup>•</sup></i>
+        </div>
+    </header>
+    <div class="content-ul">
+        <div class="content-ul-top">
+            <p>我的余额：<span><span>3000</span>元</span></p>
+            <a href="doufu-wap-nom-apply.html">申请提现</a>
+            <a href="doufu-wap-nom-recharge.html">充值</a>
+        </div>
+        <div class="content-ul-bottom">
+            <p>余额提现说明</p>
+            <ul>
+                <li>1.余额提现申请之后，我们将在7个工作日内完成申请处理。</li>
+                <li>2.如果订单是用公司账户支付的，提现时必须为原公司对公账户（若公司名称变更，可提供工商局的变更函，此时可提现至变更后的公司）。</li>
+                <li>3.如果订单是用个人账户支付的，提现时个人的银行账户、支付宝账户均可。</li>
+            </ul>
+        </div>
+    </div>
+    <ul class="content-ul">
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>充值</span><em>+<em>300</em></em></p>
+                <p><i>2017-08-10</i>
+                </p>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>继续教育学时</span><em>-<em>300</em></em></p>
+                <p><i>2017-08-10</i>
+                </p>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>退款</span><em>+<em>500</em></em></p>
+                <p><i>2017-08-10</i>
+                </p>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>充值</span><em>+<em>300</em></em></p>
+                <p><i>2017-08-10</i>
+                </p>
+            </div>
+        </li>
+    </ul>
+    <div class="null">
+        <p>&#xe623;</p>
+        <p>这里暂时什么都没有哦~</p>
+    </div>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+    $(function() {
+        if ($(".content-li").length == 0) {
+            $(".null").show();
+        }
+        $(".content-ul").eq(0).show();
+        $(".header-top").find("i").eq(0).addClass("h");
+        $(".header-top").find("i").on("click", function() {
+            var i = $(this).index();
+            $(".header-top").find("i").eq(i).addClass("h").siblings("i").removeClass("h");
+            $(this).find("sup").hide();
+            $(".content-ul").eq(i).show().siblings(".content-ul").hide();
+        })
+
+    })
+</script>

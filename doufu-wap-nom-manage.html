@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-manage.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <div class="hunt">
+        <ul class="hunt-aspect">
+            <li class="hunt-aspect-side">
+               <a href="doufu-wap-nom-siteall.html" class="back">&#xe613;&nbsp;管理收货地址</a><a href="doufu-wap-nom-siteall.html" class="manage">完成</a>
+            </li>
+            <ul class="hunt-aspect-ul">
+                <li class="hunt-aspect-li">
+                   <div class="hunt-aspect-li-top">
+                        <p>收件人：<i>小路</i><em>13057612112</em>
+                        </p>
+                        <p class="site"><u>[默认]</u><span>收货地址：</span><span>江苏省南京市鼓楼区山西路颐和商厦13楼H座</span></p>
+                   </div>
+                   <div class="hunt-aspect-li-bottom">
+                        <span class="choose h">&#xe63f;</span>
+                        <i>&nbsp;默认地址</i>
+                        <em class="remove">&#xe631;&nbsp;删除</em>
+                        <a href="doufu-wap-nom-address.html" class="redact">&#xe602;&nbsp;编辑</a>
+                   </div>
+                </li>
+                <li class="hunt-aspect-li">
+                   <div class="hunt-aspect-li-top">
+                        <p>收件人：<i>小路</i><em>13057612112</em>
+                        </p>
+                        <p class="site"><span>收货地址：</span><span>江苏省南京市鼓楼区山西路颐和商厦13楼H座</span></p>
+                   </div>
+                   <div class="hunt-aspect-li-bottom">
+                        <span class="choose">&#xe63f;</span>
+                        <i>&nbsp;设为默认</i>
+                        <em class="remove">&#xe631;&nbsp;删除</em>
+                        <a href="doufu-wap-nom-address.html" class="redact">&#xe602;&nbsp;编辑</a>
+                   </div>
+                </li>
+                <li class="hunt-aspect-li">
+                   <div class="hunt-aspect-li-top">
+                        <p>收件人：<i>小路</i><em>13057612112</em>
+                        </p>
+                        <p class="site"><span>收货地址：</span><span>江苏省南京市鼓楼区山西路颐和商厦13楼H座</span></p>
+                   </div>
+                   <div class="hunt-aspect-li-bottom">
+                        <span class="choose">&#xe63f;</span>
+                        <i>&nbsp;设为默认</i>
+                        <em class="remove">&#xe631;&nbsp;删除</em>
+                        <a href="doufu-wap-nom-address.html" class="redact">&#xe602;&nbsp;编辑</a>
+                   </div>
+                </li>
+            </ul>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+$(function(){
+    $(".choose").on("click",function(){
+        $(this).addClass("h").siblings("i").html("&nbsp;默认地址");
+        $(this).parents(".hunt-aspect-li").siblings(".hunt-aspect-li").find(".choose").removeClass("h").siblings("i").html("&nbsp;设为默认");
+    })
+    $(".remove").on("click",function(){
+        $(this).parents(".hunt-aspect-li").remove();
+    })
+})
+</script>

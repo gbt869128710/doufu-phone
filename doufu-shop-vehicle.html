@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-shop-vehicle.css">
+</head>
+
+<body>
+    <div class="shop">
+        <div class="shop-icon">
+            <img src="images/gouwuc.png" alt="">
+        </div>
+        <div class="shop-number">
+            <span>1</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+    $(function(){
+        $(window).on("touchmove",function(){  $(".shop").stop(true).animate({"right": "-20px"},100);
+        })
+        $(window).on("touchend",function(){  $(".shop").stop(true).delay(1000).animate({"right": "20px"},500);
+        })
+    })
+</script>
+
+

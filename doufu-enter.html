@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-enter.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+   <div class="content">
+        <div class="logo">
+            <img src="images/logo1.png" alt="">
+        </div>
+        <h4>登陆豆腐网</h4>
+        <ul class="content-ul">
+            <li class="content-li">
+                <span>&#xe648;</span>
+                <input type="text" placeholder="请输入手机号" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <div class="hint">
+                    <p>手机号不为空</p>
+                </div>
+            </li>
+            <li class="content-li">
+                <span>&#xe654;</span>
+                <input type="password" placeholder="请输入密码" class="code" disabled>
+                <div class="hint">
+                    <p>密码不为空</p>
+                </div>
+            </li>
+        </ul>
+        <div class="popular-li-center">
+            <a href="" class="finish">登录</a>
+        </div>
+        <p>
+            <a href="doufu-wap-nom-find.html">忘记密码？</a>
+            <a href="doufu-enroll.html">没有账号？立即注册</a>
+        </p>
+        <fieldset>
+            <legend>&nbsp;使用以下社交账号直接登录&nbsp;</legend>
+        </fieldset>
+        <div class="login-other">
+            <a href="http://www.douf.com.cn/catalog/controller/api/qq_callback.php">&#xe605;</a>
+            <a href="http://www.gongzuoya.com/index.php?m=sinaconnect">&#xe60a;</a>
+            <a href="">&#xe600;</a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script src="js/doufu-enter.js"></script>

@@ -1,0 +1,181 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+
+header {
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    .header-top {
+        overflow: hidden;
+        width: 100%; 
+        i {
+            float: left;
+            width: 50%;
+            color: #666;
+            text-align: center;
+            line-height: 34px;
+            font-size: 1.4rem;
+            border-bottom: 1px solid #ccc;
+        }
+        i.h {
+            border-bottom: 1px solid #00aaee;
+            color: #00aaee;
+        }
+    }
+}
+.hunt {
+    margin: 35px 0 45px 0;
+    padding-bottom: 20px;
+    width: 100%;
+    background: #fff;
+    .hunt-aspect {
+        display: none;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        .hint{
+            display: none;
+            margin: 20px 5% 0 5%;
+            padding: 10px 2%;
+            font-size: 1.4rem;
+            color: #333;
+        }
+        .enroll-code{
+            display: none;
+        }
+        .hunt-aspect-manage{
+            overflow: hidden;
+            padding: 20px 5% 0 5%;
+            span{
+                float: left;
+                width: 65px;
+                text-align: right;
+                color: #999;
+                font-size: 1.3rem;
+                line-height: 30px;
+            }
+            i{
+                float: left;
+                color: #ff0000;
+                font-size: 1.3rem;
+                line-height: 30px;
+            }
+            .circle{
+                float: left;
+                margin-left: 8px;
+                padding: 0 10px;
+                width: 60%;
+                height: 30px;
+                color: #999;
+                border: 1px solid #ccc;
+                font-size: 1.2rem;
+            }
+            .code{
+                width: 35%;
+            }
+            .verify{
+                float: left;
+                margin-left: 10px;
+                height: 30px;
+                width: calc(25% - 10px);
+                border: 1px solid #ff9700;
+                font-size: 1.2rem;
+                color: #999;
+            }
+            #demo{
+                float: left;
+                margin-left: 8px;
+                width: calc(60% + 22px); 
+            }
+            #slider {
+                float: right;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #dae2d0;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#slider_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #7AC23C;
+  z-index: 1;
+}
+
+#label {
+  width: 46px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  z-index: 3;
+  cursor: move;
+  color: #ff9e77;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#labelTip {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  font-family: 'Microsoft Yahei', serif;
+  color: #787878;
+  line-height: 28px;
+  text-align: center;
+  z-index: 2;
+}
+            p{
+                display: none;
+                margin-top: 3px;
+                color: #ff0000;
+                margin-left: 80px;
+                font-size: 1.2rem;
+                clear: both;
+            }
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+            height: 43px;
+            border: 1px solid #00aaee;
+            .cancel,.affirm {
+                float: left;
+                width: calc(50% - 1px);
+                height: 43px;
+                background: #00aaee;
+                color: #fff;
+                text-align: center;
+                line-height: 44px;
+                font-size: 1.4rem;
+                border: none;
+            }
+            .cancel{
+                height: 43px;
+                background: #fff;
+                color: #666;
+            }
+        }
+    }
+}

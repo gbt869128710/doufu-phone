@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 62.5%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i, em {
+  font-style: normal; }
+
+/*border-radius*/
+body {
+  background: #f2f2f2; }
+
+.hunt {
+  margin: 0 0 55px 0;
+  width: 100%;
+  background: #ffffff; }
+  .hunt h4 {
+    padding: 20px 4% 0 4%;
+    font-size: 1.4rem; }
+  .hunt .hunt-aspect {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc; }
+    .hunt .hunt-aspect .hunt-aspect-side {
+      overflow: hidden;
+      padding: 10px 0;
+      margin: 0 4%;
+      width: 92%;
+      border-bottom: 1px dashed #ccc;
+      line-height: 28px;
+      font-size: 1.3rem; }
+      .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right {
+        float: right;
+        width: 100%; }
+        .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p {
+          line-height: 30px;
+          color: #999;
+          font-size: 1.3rem; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p i {
+            float: right;
+            color: #ff0000;
+            font-size: 1.3rem; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p span {
+            color: #333;
+            font-size: 1.5rem; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p em {
+            color: #999;
+            font-size: 1.2rem; }
+    .hunt .hunt-aspect .me-top-left {
+      overflow: hidden;
+      width: 92%;
+      padding: 0 4%;
+      background: #ffffff;
+      line-height: 24px; }
+      .hunt .hunt-aspect .me-top-left .logo {
+        margin: 0 2% 10px 0;
+        float: left;
+        overflow: hidden;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%; }
+        .hunt .hunt-aspect .me-top-left .logo img {
+          width: 24px;
+          height: 24px; }
+      .hunt .hunt-aspect .me-top-left p {
+        float: left;
+        font-size: 1.4rem;
+        color: #333; }
+      .hunt .hunt-aspect .me-top-left span {
+        float: left;
+        margin-left: 3%;
+        color: #999;
+        font-size: 1.3rem;
+        font-weight: lighter; }
+    .hunt .hunt-aspect .hunt-aspect-side:last-of-type {
+      border-bottom: none; }
+
+.bottom {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: -100%;
+  left: 0; }
+  .bottom li {
+    overflow: hidden;
+    padding: 0 8%;
+    border-bottom: 1px solid #ccc; }
+    .bottom li .pay {
+      float: left;
+      overflow: hidden;
+      width: 35px;
+      height: 35px; }
+      .bottom li .pay img {
+        height: 23px;
+        margin-top: 9px; }
+    .bottom li span {
+      line-height: 40px;
+      font-size: 1.6rem;
+      color: #333; }
+    .bottom li i {
+      float: right;
+      line-height: 40px;
+      color: transparent;
+      font-size: 1.6rem; }
+    .bottom li i.h {
+      color: #00aaee; }
+  .bottom li:nth-child(1) .pay img {
+    margin-left: -70px; }
+  .bottom li:nth-child(3) .pay img {
+    margin-left: -35px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  background: #fff; }
+  footer .footer-center {
+    padding: 0 0 0 4%;
+    width: 96%;
+    background: #fff; }
+    footer .footer-center .footer-part {
+      float: left;
+      overflow: hidden;
+      width: calc(200% / 3);
+      height: 50px; }
+      footer .footer-center .footer-part p {
+        line-height: 50px;
+        font-size: 1.2rem;
+        color: #999;
+        text-align: right; }
+        footer .footer-center .footer-part p span {
+          color: #ff0000;
+          font-size: 1.4rem; }
+      footer .footer-center .footer-part p:nth-child(2) {
+        margin-top: 5px; }
+    footer .footer-center .footer-part:nth-child(2) {
+      width: calc(100% / 3);
+      text-align: center; }
+      footer .footer-center .footer-part:nth-child(2) button {
+        width: 100%;
+        background: #0ae;
+        color: #fff;
+        font-size: 1.4rem;
+        line-height: 50px;
+        border: none; }

@@ -1,0 +1,309 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+.ask{
+    display: block;
+    width: 92%;
+    padding: 0 4%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    line-height: 35px;
+    font-size: 1.4rem;
+    color: #666;
+}
+.center-perfect {
+            padding: 10px 0;
+            width: 100%;
+    background: #fff;
+    font-size: 1.4rem;
+    overflow: hidden;
+            .perfect-row {
+                
+                padding: 0 4%;
+                width: 92%;
+                height: 30px;
+                margin-bottom: 10px;
+                .sky {
+                    float: left;
+                    width: 6px;
+                    height: 30px;
+                }
+                i {
+                    float: left;
+                    margin-right: 5px;
+                    color: #FF000D;
+                    font-size: 1.4rem;
+                    line-height: 36px;
+                }
+                .perfect-row-left {
+                    float: left;
+                    width: 62px;
+                    font-size: 1.2rem;
+                    color: #333;
+                    line-height: 30px;
+                    text-align: right;
+                }
+                .perfect-row-radio {
+                    float: left;
+                    margin-top: 9px;
+                }
+                .perfect-row-right {
+                    float: left;
+                    font-size: 1.2rem;
+                    color: #333;
+                    line-height: 30px;
+                }
+                .firm {
+                    margin-left: 5px;
+                    font-size: 1.2rem;
+                    color: #999;
+                    line-height: 30px;
+                }
+                .null {
+                    margin-right: 13px;
+                }
+                .phone {
+                    float: left;
+                    padding: 0 10px;
+                    width: 60%;
+                    height: 28px;
+                    line-height: 28px;
+                    border: 1px solid #ccc;
+                }
+                .phone-select{
+                    position: relative;
+                float: left;
+                padding: 0 10px;
+                width: 60%;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #ccc;
+                outline: none;
+                .trigon{
+                    float: right;
+                    line-height: 30px;
+                    font-size: 1.4rem;
+                }
+                .phone-text{
+                    color: #999;
+                    font-size: 1.2rem;
+                    float: left;
+                    width: 90%;
+                    height: 30px;
+                    overflow: hidden;
+                }
+            } 
+            .choose-select{
+                display: none;
+                position: absolute;
+                left: -1px;
+                top: 28px;
+                z-index: 2;
+                width: 100%;
+                background: #fff;
+                border: 1px solid #ccc;
+                .choose-option{
+                    overflow: hidden;
+                    cursor:default;
+                    font-size: 1.4rem;
+                    color: #666;
+                    margin: 0 10px;
+                    padding: 6px 0;
+    border-bottom: 1px solid #ccc;
+                    p{
+                        float: left;
+                        line-height: 20px;
+                    }
+                }
+                .choose-option.h{
+                    background: #00aaee;
+                    color: #fff;
+                }
+            }
+                #slider {
+                    float: left;
+                    width: 242px;
+                    height: 30px;
+                    position: relative;
+                    border-radius: 2px;
+                    background-color: #dae2d0;
+                    overflow: hidden;
+                    text-align: center;
+                    user-select: none;
+                    -moz-user-select: none;
+                    -webkit-user-select: none;
+                }
+                #slider_bg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    background-color: #7AC23C;
+                    z-index: 1;
+                }
+                #label {
+                    width: 46px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 28px;
+                    line-height: 28px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    z-index: 3;
+                    cursor: move;
+                    color: #ff9e77;
+                    font-size: 1.4rem;
+                    font-weight: 900;
+                }
+                #labelTip {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 1.2rem;
+                    font-family: 'Microsoft Yahei', serif;
+                    color: #787878;
+                    line-height: 28px;
+                    text-align: center;
+                    z-index: 2;
+                }
+            }
+            .perfect-row:nth-child(1){
+                height: 58px;
+            }
+            .perfect-row:nth-child(6),.perfect-row:nth-child(7){
+                height: 100px;
+            }
+            .enroll-code {
+                display: none;
+            }
+            .permit-all {
+                overflow: hidden;
+                position: relative;
+                margin-right: 20px;
+                float: left;
+                width: 80px;
+                height: 80px;
+                cursor: pointer;
+                .plus {
+                    font-size: 4rem;
+                    text-align: center;
+                    color: #999;
+                }
+                .plus-file {
+                    font-size: 1.4rem;
+                    text-align: center;
+                    color: #999;
+                }
+                #addCommodityIndex {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            .attachment-all {
+                overflow: hidden;
+                position: relative;
+                margin-top: 5px;
+                float: left;
+                width: 100px;
+                height: 20px;
+                cursor: pointer;
+                border: 1px solid #ccc;
+                .attachment-file {
+                    font-size: 1.2rem;
+                    text-align: center;
+                    color: #000;
+                    line-height: 20px;
+                }
+                .attachment {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100px;
+                    height: 20px;
+                    opacity: 0;
+                }
+            }
+            textarea {
+                float: left;
+                width: 63%;
+                height: 88px;
+                padding: 5px;
+                resize: none;
+                outline: none;
+                border: 1px solid #ccc;
+            }
+            .perfect-code-hint {
+                padding: 0 4%;
+                overflow: hidden;
+                margin: -4px 0 15px 75px;
+                width: 40%;
+                color: #999;
+                font-size: 1.2rem;
+                .red{
+                    display: none;
+                    color: #ff0000;
+                }
+            }
+            .enroll-bottom-breath {
+                margin: 0 auto;
+                width: 210px;
+                height: 20px;
+                a {
+                    margin-left: 22px;
+                    color: #333;
+                    font-size: 1.4rem;
+                    color: #00aaee;
+                }
+            }
+        }
+.knob{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: calc(100% - 2px);
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.4rem;
+    border: 1px solid #0ae;
+    a{
+        display: inline-block;
+        width: 100%;
+        height: 45px;
+        color: #fff;
+        background: #00aaee;
+    }
+    .affirm,.cancel{
+        float: left;
+        width: 50%;
+    }
+    .affirm{
+        color: #666;
+        background: #fff;
+    }
+}
+.put{
+    margin:40px 5%; 
+    color: #666;
+    font-size: 1.4rem;
+    span{
+        color: #0ae;
+    font-size: 1.4rem;
+    }
+}
+.put-top{
+    margin:10px 5%; 
+    color: #666;
+    font-size: 1.4rem;
+    span{
+        color: #0ae;
+    font-size: 1.4rem;
+    }
+}

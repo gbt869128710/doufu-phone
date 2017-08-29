@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 62.5%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i, em {
+  font-style: normal; }
+
+/*border-radius*/
+body {
+  background: #f2f2f2; }
+
+header {
+  width: 100%;
+  background: #fff; }
+  header .header-top {
+    overflow: hidden;
+    width: 90%;
+    padding: 5px 5%;
+    border-bottom: 1px solid #ccc; }
+    header .header-top .header-top-left {
+      width: 100%; }
+      header .header-top .header-top-left p {
+        font-size: 1.4rem;
+        color: #666; }
+        header .header-top .header-top-left p a {
+          float: right;
+          color: #00aaee;
+          font-size: 1.3rem; }
+        header .header-top .header-top-left p span {
+          color: #999;
+          font-size: 1.3rem; }
+        header .header-top .header-top-left p i {
+          color: #ff0000; }
+
+.null {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 16%;
+  left: 0; }
+  .null p {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 6rem;
+    color: #ccc; }
+  .null p:last-of-type {
+    font-size: 1.4rem; }
+
+.hunt {
+  margin: 20px 0 55px 0;
+  width: 100%;
+  background: #ffffff; }
+  .hunt .hunt-aspect {
+    overflow: hidden;
+    width: 100%;
+    height: auto; }
+    .hunt .hunt-aspect .hunt-aspect-side {
+      overflow: hidden;
+      padding: 10px 4%;
+      width: 92%;
+      border-bottom: 1px solid #ccc;
+      line-height: 28px;
+      font-size: 1.3rem; }
+      .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-left {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        color: transparent;
+        text-align: center;
+        line-height: 12px;
+        font-size: 1.2rem; }
+      .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-left.h {
+        border: 1px solid #00aaee;
+        color: #0ae; }
+      .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right {
+        float: right;
+        width: calc(98% - 20px); }
+        .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p {
+          line-height: 24px;
+          color: #999;
+          font-size: 1.3rem; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p i {
+            float: right;
+            color: #ff0000;
+            font-size: 1.3rem; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p a {
+            color: #333;
+            font-size: 1.5rem; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right p em {
+            display: none;
+            float: right;
+            margin-left: 5%;
+            font-size: 1.8rem;
+            line-height: 22px; }
+        .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom span {
+          font-size: 1.3rem;
+          color: #999; }
+        .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom p {
+          float: right;
+          min-width: 50px;
+          height: 20px;
+          border: 1px solid #ccc;
+          text-align: center; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom p .number {
+            float: left;
+            min-width: 20px;
+            font-size: 1.3rem;
+            line-height: 20px; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom p .minus, .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom p .plus {
+            float: left;
+            width: 15px;
+            height: 20px;
+            color: #999;
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 20px; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom p .minus {
+            border-right: 1px solid #ccc; }
+          .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-right .hunt-aspect-side-bottom p .plus {
+            border-left: 1px solid #ccc; }
+    .hunt .hunt-aspect .hunt-aspect-side:last-of-type {
+      border-bottom: none; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 30px #ccc; }
+  footer .footer-center {
+    padding: 0 0 0 4%;
+    width: 96%;
+    background: #fff; }
+    footer .footer-center .footer-part {
+      float: left;
+      overflow: hidden;
+      width: calc(100% / 3);
+      height: 50px; }
+      footer .footer-center .footer-part p {
+        margin-top: 8px;
+        font-size: 1.2rem;
+        color: #999; }
+        footer .footer-center .footer-part p span {
+          color: #ff0000;
+          font-size: 1.4rem; }
+      footer .footer-center .footer-part p:nth-child(2) {
+        margin-top: 5px; }
+      footer .footer-center .footer-part .all {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin-top: 18px;
+        border: 1px solid #ccc;
+        color: transparent;
+        text-align: center;
+        line-height: 12px;
+        font-size: 1.2rem; }
+      footer .footer-center .footer-part .all.h {
+        border: 1px solid #00aaee;
+        color: #0ae; }
+      footer .footer-center .footer-part em {
+        margin-left: 5px;
+        float: left;
+        color: #999;
+        font-size: 1.2rem;
+        line-height: 50px; }
+    footer .footer-center .footer-part:nth-child(3) {
+      background: #0ae;
+      text-align: center; }
+      footer .footer-center .footer-part:nth-child(3) a {
+        color: #fff;
+        font-size: 1.4rem;
+        line-height: 50px; }

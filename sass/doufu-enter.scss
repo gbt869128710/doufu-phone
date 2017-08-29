@@ -1,0 +1,179 @@
+@import "base";
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg1.png)no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.content {
+    padding: 40px 8%;
+    width: 84%;
+    .logo{
+        margin: 0 auto;
+        width: 40px;
+        img{
+            width: 40px;
+        }
+    }
+    h4{
+        margin: 20px 0 30px 0;
+        font-size: 1.3rem;
+        color: #fff;
+        text-align: center;
+        font-weight: inherit;
+    }
+    .content-ul {
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+        margin-bottom: 20px;
+        line-height: 42px;
+        @include br4(5px);
+        .content-li {
+            overflow: hidden;
+            position: relative;
+            margin: 0 4%;
+            width: 92%;
+            border-bottom: 1px solid #ccc;
+            .hint{
+                position: absolute;
+                right: 10px;
+                top: 0;
+                p{
+                    display: none;
+                    float: right;
+                    margin: 0 0 0 10px;
+                    color: #ff0000;
+                    font-size: 1.2rem;
+                }
+                .gain{
+                    float: right;
+                    margin-top: 7px;
+                    width: 70px;
+                    height: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                    background: #f2f2f2;
+                    @include br4(2px);
+                }
+            }
+            span{
+                float: left;
+                    font-size: 1.4rem;
+                color: #999;
+            }
+            input{
+                float: left;
+                padding: 0 2%;
+                width: 89%;
+                font-size: 1.3rem;
+                color: #999;
+                line-height: 42px;
+            }
+            .code{
+                width: 90%;
+            }
+            input-placeholder {
+              color:#999;
+              }
+            ::-webkit-input-placeholder { 
+              color:#999;
+              }
+                .choose-text{
+                    padding: 0 2%;
+                    font-size: 1.3rem;
+                color: #999;
+                line-height: 36px;
+                }
+                .trigon {
+                    margin-top: 12px;
+                    margin-right: 4%;
+                    float: right;
+                    width: 0;
+                    height: 0;
+                    border-top: 6px solid #999;
+                    border-left: 3px solid transparent;
+                    border-right: 3px solid transparent;
+                }
+}
+        .content-li:last-of-type{
+                        border-bottom: none;
+                    }
+                .choose-ul {
+                    display: none;
+                    overflow: auto;
+                    padding: 0 4%;
+                    position: absolute;
+                    top:75px;
+                    left: 0;
+                    width: 92%;
+                    height: 148px;
+                    background: #fff;
+                    .choose-li{
+                        padding: 0 2%;
+                        border-bottom: 1px solid #ccc;
+                        font-size: 1.3rem;
+                        color: #999;
+                        line-height: 36px;
+                    }
+                    .choose-li:last-of-type{
+                        border-bottom: none;
+                    }
+    }
+    }
+    .popular-li-center {
+            overflow: hidden;
+            width: 92%;
+            padding: 0 4%;
+            a{
+                display: block;
+                text-align: center;
+                font-size: 1.4rem;
+                color: #fff;
+                line-height: 40px;
+                background: #00aaee;
+                @include br4(4px);
+        }
+    }
+    p{
+        overflow: hidden;
+        width: 92%;
+        padding: 0 4%;
+        line-height: 40px;
+        a{
+            font-size: 1.2rem;
+            color: #b3b3b3;
+        }
+        a:nth-child(2){
+            float: right;
+        }
+    }
+    fieldset{
+         width: 92%;
+        margin: 30px 4% 10px 4%;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        legend{
+            text-align: center;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+    }
+    .login-other{
+        text-align: center;
+        color: #fff;
+        a{
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 4.2rem;
+            color: #fff;
+        }
+        a:nth-child(1){
+            font-size: 4rem;
+        }
+    }
+}

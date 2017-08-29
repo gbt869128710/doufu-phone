@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/hxx.png" alt="">
+            </div>
+            <div class="header-top-left">
+               <p><input type="text" value="黄欣欣" disabled><i class="edit">编辑</i></p>
+               <p><span>18748647284</span><a href="">退出</a></p>
+            </div>
+        </div>
+        <ul class="header-bottom">
+            <a href="doufu-wap-nom-shop.html">
+                <li>
+                    <span>10</span>
+                    <span>购物车</span>
+                </li>
+            </a>
+            <a href="doufu-wap-nom-collect.html">
+                <li>
+                    <span>3</span>
+                    <span>收藏</span>
+                </li>
+            </a>
+            <a href="doufu-wap-nom-indent.html">
+                <li>
+                    <span>3</span>
+                    <span>订单</span>
+                </li>
+            </a>
+            <a href="doufu-wap-nom-refund.html">
+                <li>
+                    <span>0</span>
+                    <span>退款</span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <span>3</span>
+                    <span>消息</span>
+                </li>
+            </a>
+        </ul>
+    </header>
+    <ul class="center">
+        <a href="">
+            <li>
+                <span>资产中心</span>
+                <i>&#xe612;</i>
+            </li>
+        </a>
+        <a href="">
+            <li>
+                <span>安全中心</span>
+                <i>&#xe612;</i>
+            </li>
+        </a>
+        <a href="">
+            <li>
+                <span>发票管理</span>
+                <i>&#xe612;</i>
+            </li>
+        </a>
+    </ul>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+$(function(){
+    $(".edit").on("click",function(){
+        if($(this).text()=="编辑"){
+            $(this).siblings("input").removeAttr("disabled");
+            $(this).siblings("input").addClass("h");
+            $(this).text("完成");
+        }else{
+            $(this).siblings("input").attr("disabled",true);
+            $(this).siblings("input").removeClass("h");
+            $(this).text("编辑")
+        }
+    })
+})
+</script>
+
+

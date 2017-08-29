@@ -1,0 +1,213 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    .header-top{
+        overflow: hidden;
+        width: 90%;
+        padding: 5px 5%;
+        border-bottom: 1px solid #ccc;
+        .header-top-left{
+            width: 100%;
+            p{
+                font-size: 1.4rem;
+                color: #666;
+                a{
+                    float: right;
+                    color: #00aaee;
+                    font-size: 1.3rem;
+                }
+                span{
+                    color: #999;
+                    font-size: 1.3rem;
+                }
+                i{
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+}
+.null{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    p{
+        margin: 0 auto;
+        text-align: center;
+        font-size:6rem;
+        color: #ccc;
+    }
+    p:last-of-type{
+        font-size: 1.4rem;
+    }
+}
+.hunt {
+    margin: 20px 0 55px 0;
+    width: 100%;
+    background: #ffffff;
+    .hunt-aspect {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        .hunt-aspect-side {
+            overflow: hidden;
+            padding: 10px 4%;
+            width: 92%;
+            border-bottom: 1px solid #ccc;
+            line-height: 28px;
+            font-size: 1.3rem;
+            .hunt-aspect-side-left{
+                float: left;
+                width: 12px;
+                height: 12px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                color: transparent;
+                text-align: center;
+                line-height: 12px;
+                font-size: 1.2rem;
+            }
+            .hunt-aspect-side-left.h{
+                border: 1px solid #00aaee;
+                color: #0ae;
+            }
+            .hunt-aspect-side-right{
+                float: right;
+                width: calc(98% - 20px);
+                p{
+
+                    line-height: 24px;
+                    color: #999;
+                    font-size: 1.3rem;
+                    i{
+                        float: right;
+                        color: #ff0000;
+                        font-size: 1.3rem;
+                    }
+                    a{
+                        color: #333;
+                        font-size: 1.5rem;
+                    }
+                    em{
+                        display: none;
+                        float: right;
+                        margin-left:5%;
+                        font-size: 1.8rem;
+                        line-height: 22px;
+                    }
+                    
+                }
+                .hunt-aspect-side-bottom{
+                    span{
+                        font-size: 1.3rem;
+                        color: #999;
+                    }
+                    p{
+                        float: right;
+                        min-width: 50px;
+                        height: 20px;
+                        border: 1px solid #ccc;
+                        text-align: center;
+                        .number{
+                            float: left;
+                            min-width: 20px;
+                            font-size: 1.3rem;
+                            line-height: 20px;
+                        }
+                        .minus,.plus{
+                            float: left;
+                            width: 15px;
+                            height: 20px;
+                            color: #999;
+                            font-size: 1.3rem;
+                            text-align: center;
+                            line-height: 20px;
+                        }
+                        .minus{
+                            border-right: 1px solid #ccc;
+                        }
+                        .plus{
+                            border-left: 1px solid #ccc;
+                        }
+                    }
+                }
+            }
+        }
+        .hunt-aspect-side:last-of-type{
+            border-bottom: none;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 30px #ccc;
+    .footer-center { 
+        padding: 0 0 0 4%;
+        width: 96%;
+        background: #fff;
+        .footer-part {
+            float: left;
+            overflow: hidden;
+            width: calc(100% / 3);
+            height: 50px;
+            p {
+                margin-top: 8px;
+                font-size: 1.2rem;
+                color: #999;
+                span{
+                    color: #ff0000;
+                    font-size: 1.4rem;
+                }
+            }
+            p:nth-child(2){
+                margin-top: 5px;
+            }
+            .all{
+                float: left;
+                width: 12px;
+                height: 12px;
+                margin-top: 18px;
+                border: 1px solid #ccc;
+                color: transparent;
+                text-align: center;
+                line-height: 12px;
+                font-size: 1.2rem;
+            }
+            .all.h{
+                border: 1px solid #00aaee;
+                color: #0ae;
+            }
+            em{
+                margin-left: 5px;
+                float: left;
+                color: #999;
+                font-size: 1.2rem;
+                line-height: 50px;
+            }
+        }
+        
+        .footer-part:nth-child(3) {
+            background: #0ae;
+            text-align: center;
+            a {
+                color: #fff;
+                font-size: 1.4rem;
+                line-height:50px; 
+            }
+        }
+    }
+}

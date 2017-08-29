@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-find.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+   <div class="content">
+        <div class="hunt">
+            为了验证您的身份，请填写注册时使用的手机号。我们将以短信的方式向这个手机发送验证码
+        </div>
+        <ul class="content-ul">
+            <li class="content-li">
+                <input type="text" placeholder="请输入注册时手机号" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <div class="hint">
+                    <p>手机号不正确</p>
+                </div>
+            </li>
+            <li class="content-li">
+                <input type="text" placeholder="请输入验证码" maxlength="6" class="code" disabled>
+                <div class="hint">
+                    <p>验证码不正确</p>
+                    <input type="button" class="gain" value="点击获取" disabled>
+                </div>
+            </li>
+        </ul>
+        <ul class="content-ul">
+            <li class="content-li">
+                <input type="password" placeholder="请输入新密码，6-18位数字或者字母" class="cipher">
+                <div class="hint">
+                    <p>密码不为空</p>
+                </div>
+            </li>
+            <li class="content-li">
+                <input type="password" placeholder="请确认密码" class="affirm">
+                <div class="hint">
+                    <p>密码不一致</p>
+                </div>
+            </li>
+        </ul>
+        <div class="popular-li-center">
+            <input type="button" class="finish" value="下一步" disabled>
+        </div>
+    </div>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script src="js/doufu-nom-find.js"></script>

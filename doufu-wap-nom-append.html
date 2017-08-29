@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-append.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+   <ul class="content-ul">
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>支付宝</span><em>&#xe63f;</em>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>银行卡</span><em>&#xe63f;</em>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <a href="doufu-wap-nom-add.html">下一步</a>
+            </div>
+        </li>
+    </ul>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+    $(function() {
+        $(".content-li").on("click", function() {
+            $(this).find("em").show();
+            $(this).siblings(".content-li").find("em").hide();
+        })
+
+    })
+</script>

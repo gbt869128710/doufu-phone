@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-collect.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+               <p><span>共收藏<i>0</i>件商品</span><a class="compile">编辑</a></p>
+            </div>
+        </div>
+    </header>
+    <div class="hunt">
+        <ul class="hunt-aspect">
+            <li class="hunt-aspect-side">
+                <p><a href="">有限责任公司注册</a><em>&#xe631;</em><i>￥<i>3000</i></i></p>
+                <p>江苏-南京-鼓楼区</p>
+            </li>
+            <li class="hunt-aspect-side">
+                <p><a href="">有限责任公司注册</a><em>&#xe631;</em><i>￥<i>3000</i></i></p>
+                <p>江苏-南京-鼓楼区</p>
+            </li>
+            <li class="hunt-aspect-side">
+                <p><a href="">有限责任公司注册</a><em>&#xe631;</em><i>￥<i>3000</i></i></p>
+                <p>江苏-南京-鼓楼区</p>
+            </li>
+            <li class="hunt-aspect-side">
+                <p><a href="">有限责任公司注册</a><em>&#xe631;</em><i>￥<i>3000</i></i></p>
+                <p>江苏-南京-鼓楼区</p>
+            </li>
+            <li class="hunt-aspect-side">
+                <p><a href="">有限责任公司注册</a><em>&#xe631;</em><i>￥<i>3000</i></i></p>
+                <p>江苏-南京-鼓楼区</p>
+            </li>
+        </ul>
+    </div>
+    <div class="null">
+        <p>&#xe623;</p>
+        <p>这里暂时什么都没有哦~</p>
+    </div>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+$(function(){
+    if($(".hunt-aspect-side").length==0){
+            $(".null").show();
+        }
+    $(".header-top-left").find("i").text($(".hunt-aspect-side").length);
+    $(".compile").on("click",function(){
+        if($(this).text()=="编辑"){
+            $(this).text("完成");
+            $(".hunt").find("em").show();
+        }else{
+            $(this).text("编辑");
+            $(".hunt").find("em").hide();
+        }
+    })
+    $("em").on("click",function(){
+        $(this).parents(".hunt-aspect-side").remove();
+        $(".header-top-left").find("i").text($(".hunt-aspect-side").length);
+    })
+})
+</script>
+
+

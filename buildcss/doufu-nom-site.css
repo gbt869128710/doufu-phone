@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 62.5%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i, em {
+  font-style: normal; }
+
+/*border-radius*/
+body {
+  background: #f2f2f2; }
+
+.hunt {
+  margin: 0 0 45px 0;
+  width: 100%; }
+  .hunt .hunt-aspect {
+    overflow: hidden;
+    width: 100%;
+    height: auto; }
+    .hunt .hunt-aspect .back {
+      padding: 0 4%;
+      width: 92%;
+      display: block;
+      background: #ffffff;
+      border-bottom: 1px solid #ccc;
+      font-size: 1.3rem;
+      color: #666;
+      font-weight: inherit;
+      line-height: 40px; }
+    .hunt .hunt-aspect .hunt-aspect-side {
+      margin-top: 5px;
+      padding: 10px 4%;
+      width: 92%;
+      border-bottom: 1px solid #ccc;
+      line-height: 18px;
+      font-size: 1.3rem;
+      background: #ffffff; }
+      .hunt .hunt-aspect .hunt-aspect-side span {
+        font-size: 1.4rem;
+        color: #666; }
+      .hunt .hunt-aspect .hunt-aspect-side .add {
+        display: block; }
+      .hunt .hunt-aspect .hunt-aspect-side .more, .hunt .hunt-aspect .hunt-aspect-side .more-all {
+        float: right; }
+      .hunt .hunt-aspect .hunt-aspect-side .more-all {
+        line-height: 80px; }
+      .hunt .hunt-aspect .hunt-aspect-side p {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+        color: #000; }
+        .hunt .hunt-aspect .hunt-aspect-side p em {
+          margin-left: 20%; }
+      .hunt .hunt-aspect .hunt-aspect-side .site {
+        width: 90%;
+        margin-bottom: 0; }
+    .hunt .hunt-aspect .ask {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: 45px;
+      background: #00aaee;
+      box-shadow: 0px 0px 30px #ccc;
+      color: #fff;
+      text-align: center;
+      line-height: 45px;
+      font-size: 1.4rem;
+      border: none; }

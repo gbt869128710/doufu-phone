@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-ins.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <i>订单详情</i>
+            <i>订单进程<sup>•</sup></i>
+        </div>
+    </header>
+    <ul class="content-ul">
+        <li class="content-li">
+            <h4>订单信息</h4>
+    <div class="hunt">
+        <ul class="hunt-aspect">
+            <li class="hunt-aspect-side">
+                <span>服务名称</span>
+                <i>有限公司注册</i>
+                <em>x<i>1</i></em>
+            </li>
+            <li class="hunt-aspect-side">
+                <span>地区</span>
+                <i>江苏-南京</i>
+            </li>
+            <li class="hunt-aspect-side">
+                <span>办理人</span>
+                <i>黄欣欣</i>
+            </li>
+            <li class="hunt-aspect-side">
+                <span>手机号码</span>
+                <i>18748647284</i>
+            </li>
+            <li class="hunt-aspect-side">
+                <span>下单时间</span>
+                <i>2017-05-08</i>
+            </li>
+            <li class="hunt-aspect-side">
+                <span>订单编号</span>
+                <i>521165894523564</i>
+            </li>
+        </ul>
+    </div>
+    <h4>我的服务商</h4>
+    <div class="me">
+        <ul class="me-aspect">
+            <li class="me-top-left">
+                <div class="logo">
+                    <img src="images/hxx.png" alt="">
+                </div>
+                <p>黄欣欣</p>
+                <span><i>社保代理人</i>&nbsp;|&nbsp;<i>工商办理人</i></span><a href="">&#xe612;</a>
+            </li>
+            <li class="me-aspect-side">
+                <span>手机号码</span>
+                <i>18748647284</i>
+            </li>
+            <li class="me-aspect-side">
+                <span>邮箱地址</span>
+                <i>85525694@sgdb.com</i>
+            </li>
+        </ul>
+    </div>
+       <div class="knob">
+           <a href="doufu-wap-nom-ask.html">申请退款</a>
+<!--           退款中…-->
+           <a href="">投诉服务商</a>
+<!--           投诉处理中…-->
+       </div>
+        </li>
+        <li class="content-li">
+            <div class="check-goods">
+        <p class="order-form">订单号：<span>8695256789524</span></p>
+        <ul class="order-form-flow">
+            <li class="order-form-flow-li">
+                <div class="order-form-flow-circle"></div>
+                <p>服务商当前已提交至工商局，预计评审时间2-4个月，预计评审时间2-4个月预计评审时间2-4个月请您耐心等待评审结果！</p>
+                <span class="order-form-flow-time"><span>2017-8-19</span>&nbsp;&nbsp;&nbsp;<span>20:00:21</span></span>
+            </li>
+            <li class="order-form-flow-li">
+                <div class="order-form-flow-circle"></div>
+                <p>服务商当前已提交至工商局，预计评审时间2-4个月，预计评审时间2-4个月预计评审时间2-4个月请您耐心等待评审结果！</p>
+                <span class="order-form-flow-time"><span>2017-8-19</span>&nbsp;&nbsp;&nbsp;<span>20:00:21</span></span>
+            </li>
+            <li class="order-form-flow-li">
+                <div class="order-form-flow-circle"></div>
+                <p>用户下单</p>
+                <span class="client">客户: <span>路女士</span></span>
+                <span class="order-form-flow-time"><span>2017-8-19</span>&nbsp;&nbsp;&nbsp;<span>20:00:21</span></span>
+            </li>
+        </ul>
+    </div>
+        </li>
+    </ul>
+    <div class="null">
+        <p>&#xe623;</p>
+        <p>这里暂时什么都没有哦~</p>
+    </div>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+    $(function() {
+        if($(".content-li").length==0){
+            $(".null").show();
+        }
+        $(".header-top").find("i").eq(0).addClass("h");
+        $(".content-li").eq(0).show();
+        $(".header-top").find("i").on("click", function() {
+          var i=$(this).index(); $(".header-top").find("i").eq(i).addClass("h").siblings("i").removeClass("h");
+            $(".content-li").eq(i).show().siblings(".content-li").hide();
+            if($(this).find("sup").hasClass("h")){
+                
+            }else{
+                $(this).find("sup").addClass("h");
+            }
+        })
+
+    })
+</script>

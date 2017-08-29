@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-evaluate.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <h4>评价服务：</h4>
+        <ul class="evaluate">
+            <li class="evaluate-li">
+                <input type="radio" name="sex">
+                <div class="logo">
+                    <img src="images/smile.png" alt="">
+                </div>
+                <span>好评</span>
+            </li>
+            <li class="evaluate-li">
+                <input type="radio" name="sex">
+                <div class="logo">
+                    <img src="images/smile.png" alt="">
+                </div>
+                <span>中评</span>
+            </li>
+            <li class="evaluate-li">
+                <input type="radio" name="sex">
+                <div class="logo">
+                    <img src="images/smile.png" alt="">
+                </div>
+                <span>差评</span>
+            </li>
+        </ul>
+        <textarea name="" id="" cols="30" rows="10" placeholder="请在此处填写对本次服务的评价" maxlength="200"></textarea>
+        <h5>评价服务商：<span>黄兴</span></h5>
+        <ul class="appraise-ul">
+            <li class="appraise-li">办事效率高(<span>1</span>)</li>
+            <li class="appraise-li">能力强(<span>1</span>)</li>
+            <li class="appraise-li">做事认真仔细(<span>1</span>)</li>
+            <li class="appraise-li">服务靠谱(<span>1</span>)</li>
+            <li class="appraise-li">专业水平高(<span>1</span>)</li>
+            <li class="appraise-li">响应速度快(<span>1</span>)</li>
+            <li class="appraise-li">主动热情(<span>1</span>)</li>
+            <li class="appraise-li">不专业(<span>1</span>)</li>
+            <li class="appraise-li">服务态度差(<span>1</span>)</li>
+        </ul>
+        <div class="grade">
+            <p>服务整体评分</p>
+            <div id="starttwo" class="block clearfix">
+        <div  class="star_score"></div>
+    </div>
+        </div>
+        <a href="" class="refer">提交评价</a>
+    </header>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script type="text/javascript" src="js/startScore.js"></script>
+    <script>
+     scoreFun($("#startone"))
+     scoreFun($("#starttwo"),{
+           fen_d:28,//每一个a的宽度
+           ScoreGrade:5//a的个数 10或者
+         })
+    </script>
+<script>
+    $(function(){
+        $(".appraise-li").on("click",function(){  
+            $(this).addClass("h").siblings(".appraise-li").removeClass("h");
+        })
+        
+    })
+</script>

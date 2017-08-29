@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-safety.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <i>修改密码</i>
+            <i>修改手机</i>
+        </div>
+    </header>
+    <div class="hunt">
+        <ul class="hunt-aspect">
+            <li class="hint">密码修改成功，再次修改请等待30分钟！</li>
+            <li class="hunt-aspect-manage">
+                <span>旧密码：</span><i>*</i><input type="password" placeholder="请输入旧密码" class="circle used">
+                <p>密码不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage">
+                <span>新密码：</span><i>*</i><input type="password" placeholder="请输入新密码" class="circle cipher" disabled>
+                <p>新密码不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage">
+                <span>确认密码：</span><i>*</i><input type="password" placeholder="请确认密码" class="circle cipher-code" disabled>
+                <p>密码不一致</p>
+            </li>
+            <li class="hunt-aspect-manage">
+                <span>验证码：</span><i>*</i><input type="text" placeholder="请输入验证码" class="circle code" disabled>
+                <input type="button" class="verify" value="点击获取" disabled>
+                <p>验证码不正确!</p>
+            </li>
+            <li class="footer">
+                <button class="cancel">取消</button>
+                <input type="button" class="affirm" value="确认修改" disabled>
+            </li>
+        </ul>
+        <ul class="hunt-aspect">
+            <li class="hint">手机号修改成功，再次修改请等待30分钟！</li>
+            <li class="hunt-aspect-manage">
+                <span>手机号：</span><i>*</i><input type="text" placeholder="输入要更换的手机" class="circle phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <p>手机号不正确!</p>
+            </li>
+            <li class="hunt-aspect-manage">
+                <span>密码：</span><i>*</i><input type="password" placeholder="请输入密码" class="circle cipher" disabled>
+                <p>密码不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage">
+                <span>滑动验证：</span><i>*</i>
+                <div id="demo">
+                <div id="slider">
+                    <div id="slider_bg"></div>
+                    <span id="label">>></span> <span id="labelTip">拖动滑块发送验证</span>
+                </div>
+            </div>
+            </li>
+            <li class="hunt-aspect-manage enroll-code">
+                <span>验证码：</span><i>*</i><input type="text" placeholder="请输入验证码" class="circle code">
+                <input type="button" class="verify" value="点击获取" disabled>
+                <p>验证码不正确!</p>
+            </li>
+            <li class="footer">
+                <button class="cancel">取消</button>
+                <input type="button" class="affirm" value="确认修改" disabled>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script src="js/doufu-nom-safety.js"></script>
+<script src="js/jquery.slideunlock.js"></script>

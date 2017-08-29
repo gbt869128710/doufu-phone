@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-add.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+   <div class="content">
+        <ul class="content-ul">
+            <li class="content-li">
+                <input type="text" placeholder="请输入要提现到账的银行卡号">
+            </li>
+            <li class="content-li choose">
+                <span class="choose-text">请选择银行</span>
+                <div class="trigon"></div>
+            </li>
+            <ul class="choose-ul">
+                <li class="choose-li">工商银行</li>
+                <li class="choose-li">工商银行</li>
+                <li class="choose-li">工商银行</li>
+                 <li class="choose-li">工商银行</li>
+                  <li class="choose-li">工商银行</li>
+            </ul>
+            <li class="content-li">
+                <input type="text" placeholder="请输入持卡人姓名">
+            </li>
+        </ul>
+        <ul class="content-ul">
+            <li class="content-li">
+                <input type="text" placeholder="请输入要提现到账的支付宝号" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <div class="hint">
+                    <p>支付宝账号不正确</p>
+                </div>
+            </li>
+            <li class="content-li">
+                <input type="text" placeholder="请输入姓名" class="name" disabled>
+            </li>
+            <li class="content-li">
+                <input type="text" placeholder="请输入验证码" maxlength="6" class="code" disabled>
+                <div class="hint">
+                    <p>验证码不正确</p>
+                    <input type="button" class="gain" value="点击获取" disabled>
+                </div>
+            </li>
+        </ul>
+        <div class="popular-li-center">
+            <a href="" class="finish">完成</a>
+        </div>
+    </div>
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script src="js/doufu-nom-add.js"></script>

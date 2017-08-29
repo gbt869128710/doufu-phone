@@ -1,0 +1,241 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+    .header {
+	    padding: 0 4%;
+        width: 92%;
+        height: 50px;
+        font-size: 1.3rem;
+        .phone {
+            float: left;
+            margin-top: 10px;
+            padding: 0 10px;
+            height: 28px;
+            line-height: 28px;
+            color: #999;
+            .phone-text{
+                font-size: 1.3rem;
+            }
+            .trigon {
+                margin-top: 12px;
+                margin-left: 5px;
+                float: right;
+                width: 0;
+                height: 0;
+                border-top: 6px solid #999;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+            }
+        }
+        .phone:nth-child(2){
+            position: absolute;
+            top: 0;
+            right: 50%;
+            margin-right: -41px;
+        }
+        .phone:nth-child(3){
+            position: absolute;
+            top: 0;
+            right: 12%;
+        }
+        .search-icon{
+            float: right;
+            margin-top: 10px;
+            padding-left: 2%;
+            font-size: 2rem;
+            color: #666;
+            line-height: 30px;
+            border-left: 1px solid #ccc;
+        }
+    }
+    .search {
+        position: absolute;
+        top: 0px;
+        left: 100%;
+        z-index: 2;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        .search-seek {
+            margin-top: 10px;
+            float: left;
+            width: 100%;
+            height: 30px;
+            @include br4(4px);
+            .search-back {
+                float: left;
+                margin: 0 4%;
+                width: 5%;
+                line-height: 30px;
+                font-weight: bold;
+                color: #999;
+            }
+            .search-seek-input {
+                float: left;
+                padding: 0 2%;
+                width: 60%;
+                font-size: 1.3rem;
+                color: #aaaaaa;
+                line-height: 30px;
+                border: 1px solid #ccc;
+                @include br4(3px);
+            }
+            .search-seek-input::-webkit-input-placeholder {
+                color: #aaaaaa;
+            }
+            .search-hunt {
+                float: right;
+                margin-right: 4%;
+                padding: 0 3%;
+                font-size: 1.3rem;
+                color: #00aaee;
+                line-height: 28px;
+                border: 1px solid #00aaee;
+                @include br4(3px);
+                &:active {
+                    color: #fff;
+                    background: #00aaee;
+                }
+            }
+        }
+    }
+}
+
+.header-center {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.3rem;
+    .choose-row {
+        display: none;
+        overflow: hidden;
+        width: 100%;
+        .choose-select {
+            width: 100%;
+            background: #fff;
+            .choose-option {
+                font-size: 14px;
+                color: #666;
+                p {
+                    padding: 0 5%;
+                    width: 90%;
+                    line-height: 36px;
+                    font-size: 1.3rem;
+                    color: #999;
+            border-bottom: 1px solid #ccc;
+                }
+            }
+        }
+    }
+    .choose-row.h{
+        display: block;
+    }
+}
+.services {
+    margin-top: 45px;
+    width: 100%;
+    .popular-center {
+        width: 100%;
+        background: #fff;
+        li {
+            overflow: hidden;
+            padding: 10px 4%;
+            width: 92%;
+            border-bottom: 1px solid #ccc;
+            .img-logo {
+                overflow: hidden;
+                float: left;
+                margin-top: 5px;
+                margin-right: 2%;
+                width: 70px;
+                height: 70px;
+                @include br4(50%);
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .popular-li-center {
+                float: left;
+                width: calc(98% - 70px);
+                .popular-li-center-top{
+                    position: relative;
+                    p {
+                        margin-top: 8px;
+                        font-size: 1.3rem;
+                        color: #999;
+                        width: 50%;
+                    }
+                    span {
+                        color: #333;
+                        font-size: 1.4rem;
+                    }
+                    em {
+                        color: #999;
+                        font-size: 1.3rem;
+                    }
+                    .popular-li-center-right{
+                        position: absolute;
+                        top: 0;
+                        right: 5%;
+                        border-left: 1px solid #ccc;
+                        p{
+                            margin:0 0 8px 20%;
+                            width: 100%;
+                            text-align: right;
+                            font-size: 1.3rem;
+                            i{
+                                text-align: right;
+                                color: #ff0000;
+                                font-size: 1.3rem;
+                                
+                            }
+                            em{
+                                color: #999;
+                                font-size: 1.3rem;
+                                span{
+                                    color: #999;
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                        p:last-of-type{
+                            margin:0 0 0 20%;
+                        }
+                    }
+                }
+                .popular-li-center-bottom{
+                    p {
+                        margin-top: 8px;
+                        font-size: 1.3rem;
+                        color: #999;
+                        width: 100%;
+                    }
+                }
+            }
+            a {
+                float: right;
+                color: #00aaee;
+                font-size: 1.3rem;
+                line-height: 80px;
+            }
+        }
+        a:last-of-type {
+            li{
+                border-bottom: none;
+            }
+        }
+    }
+}

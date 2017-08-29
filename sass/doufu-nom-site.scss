@@ -1,0 +1,74 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+
+.hunt {
+    margin: 0 0 45px 0;
+    width: 100%;
+    .hunt-aspect {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        .back{
+            padding: 0 4%;
+            width: 92%;
+            display: block;
+            background: #ffffff;
+            border-bottom: 1px solid #ccc;
+            font-size: 1.3rem;
+            color: #666;
+            font-weight: inherit;
+            line-height: 40px;
+        }
+        .hunt-aspect-side {
+            margin-top: 5px;
+            padding: 10px 4%;
+            width: 92%;
+            border-bottom: 1px solid #ccc;
+            line-height: 18px;
+            font-size: 1.3rem;
+            background: #ffffff;
+            span{
+                font-size: 1.4rem;
+                color: #666;
+            }
+            .add{
+                display: block;
+            }
+            .more,.more-all{
+                float: right;
+            }
+            .more-all{
+                line-height: 80px;
+            }
+            p{
+                margin-bottom: 15px;
+                font-size: 1.4rem;
+                color: #000;
+                em{
+                    margin-left: 20%;
+                }
+            }
+            .site{
+                width: 90%;
+                margin-bottom: 0;
+            }
+        }
+        .ask {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+            height: 45px;
+            background: #00aaee;
+            box-shadow: 0px 0px 30px #ccc;
+            color: #fff;
+            text-align: center;
+            line-height: 45px;
+            font-size: 1.4rem;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-apply.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+   <ul class="content-ul">
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>支付宝</span><em>&#xe63f;</em></p>
+                <p><i>130****5220</i>
+                </p>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <p><span>中国工商银行</span><em>&#xe63f;</em></p>
+                <p><i>622202**********321</i>
+                </p>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="popular-li-center">
+                <a href="doufu-wap-nom-append.html">+添加渠道</a>
+            </div>
+        </li>
+    </ul>
+    <div class="center-ul">
+        <div class="center-ul-top">
+            <p>提现金额</p>
+            <div class="center-ul-money"><span>￥</span><input type="text" class="money" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" ></div>
+            <div class="center-ul-money"><i>可用余额<i class="cash">1320</i>.00元</i><input type="button" class="money-all" value="全部提现"></div>
+        </div>
+        <div class="center-ul-bottom">
+            <a href="">5-7个工作日内到账，确认提现</a>
+            <p>余额提现说明</p>
+            <ul>
+                <li>1.余额提现申请之后，我们将在7个工作日内完成申请处理。</li>
+                <li>2.如果订单是用公司账户支付的，提现时必须为原公司对公账户（若公司名称变更，可提供工商局的变更函，此时可提现至变更后的公司）。</li>
+                <li>3.如果订单是用个人账户支付的，提现时个人的银行账户、支付宝账户均可。</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <ul class="footer-center">
+            <li class="footer-part">
+                <a href="doufu-wap.html">
+                    <div class="footer-part-top">&#xe609;</div>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-classify.html">
+                    <div class="footer-part-top">&#xe617;</div>
+                    <p>分类</p>
+                </a>
+            </li>
+            <li class="footer-part">
+                <a href="doufu-wap-nom.html">
+                    <div class="footer-part-top">&#xe618;</div>
+                    <p>个人</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+    $(function() {
+        $(".content-li").on("click", function() {
+            $(this).find("em").show();
+            $(this).siblings(".content-li").find("em").hide();
+        })
+        $(".money-all").on("click", function() {
+            $(".money").val($(".cash").text())
+        })
+
+    })
+</script>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-info.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <div class="hunt">
+        <a href="doufu-wap-nom-invoice.html" class="back">&#xe613;&nbsp;添加发票信息</a>
+        <ul class="hunt-aspect">
+            <li class="hunt-aspect-manage">
+                <span>发票类型：</span><i>*</i>
+                <input type="radio" name="sex" checked>
+                <em>个人</em>
+                <input type="radio" name="sex">
+                <em>企业</em>
+            </li>
+            <li class="hunt-aspect-manage">
+                <span>发票抬头：</span><i>*</i><input type="text" placeholder="请填写您营业执照上的全称">
+                <p>发票抬头不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage person">
+                <span>发票类型：</span><i>*</i>
+                <input type="radio" name="sen" checked>
+                <u>增值税普通发票</u>
+                <div class="turn firm">
+                    <input type="radio" name="sen" class="wy">
+                    <u>增值税专用发票</u>
+                </div>
+            </li>
+            <li class="hunt-aspect-manage firm">
+                <span>税务登记证：</span><i>*</i><input type="text" placeholder="请填写税务登记证">
+                <p>税务登记证不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage private">
+                <span>基本开户银行名称：</span><i>*</i><input type="text" placeholder="请填写基本开户银行名称">
+                <p>基本开户银行名称不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage private">
+                <span>基本开户账号：</span><i>*</i><input type="text" placeholder="请填写基本开户账号">
+                <p>基本开户账号不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage private">
+                <span>注册场所地址：</span><i>*</i><input type="text" placeholder="请填写注册场所地址">
+                <p>注册场所地址不为空!</p>
+            </li>
+            <li class="hunt-aspect-manage private">
+                <span>注册固定电话：</span><i>*</i><input type="text" placeholder="请填写注册固定电话" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <p>注册固定电话不为空!</p>
+            </li>
+            <a href="" class="ask">保存</a>
+<!--            申请修改-->
+        </ul>
+        <h4>如果想要修改发票申请信息，则可能需要等待数日，如需加急请电话联系，电话：025-1212121</h4>
+    </div>
+    
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script src="js/doufu-nom-invoice.js"></script>

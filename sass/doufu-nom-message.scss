@@ -1,0 +1,182 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+
+.hunt {
+    margin: 0 0 55px 0;
+    width: 100%;
+    background: #ffffff;
+    h4{
+        padding: 20px 4% 0 4%;
+        font-size: 1.4rem;
+    }
+    .hunt-aspect {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+        .hunt-aspect-side {
+            overflow: hidden;
+            padding: 10px 0;
+            margin: 0 4%;
+            width: 92%;
+            border-bottom: 1px dashed #ccc;
+            line-height: 28px;
+            font-size: 1.3rem;
+            .hunt-aspect-side-right{
+                float: right;
+                width: 100%;
+                p{
+
+                    line-height: 30px;
+                    color: #999;
+                    font-size: 1.3rem;
+                    i{
+                        float: right;
+                        color: #ff0000;
+                        font-size: 1.3rem;
+                    }
+                    span{
+                        color: #333;
+                        font-size: 1.5rem;
+                    }
+                    em{
+                        color: #999;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .me-top-left{
+            overflow: hidden;
+            width: 92%;
+            padding: 0 4%;
+            background: #ffffff;
+            line-height: 24px;
+            .logo{
+                margin: 0 2% 10px 0;
+                float: left;
+                overflow: hidden;
+                width: 24px;
+                height: 24px;
+                @include br4(50%);
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            p{
+                float: left;
+                font-size: 1.4rem;
+                color: #333;
+            }
+            span{
+                float: left;
+                margin-left: 3%;
+                color: #999;
+                font-size: 1.3rem;
+                font-weight: lighter;
+            }
+        }
+        .hunt-aspect-side:last-of-type{
+            border-bottom: none;
+        }
+    }
+}
+.bottom{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    li{
+        overflow: hidden;
+        padding: 0 8%;
+        border-bottom: 1px solid #ccc;
+        .pay{
+            float: left;
+            overflow: hidden;
+            width: 35px;
+            height: 35px;
+            img{
+                height: 23px;
+                margin-top: 9px;
+            }
+        }
+        span{
+            line-height: 40px;
+            font-size: 1.6rem;
+            color: #333;
+        }
+        i{
+            float: right;
+            line-height: 40px;
+            color: transparent;
+            font-size: 1.6rem;
+        }
+        i.h{
+            color: #00aaee;
+        }
+    }
+    li:nth-child(1){
+        .pay{
+            img{
+                margin-left: -70px;
+            }
+        }
+    }
+    li:nth-child(3){
+        .pay{
+            img{
+                margin-left: -35px;
+            }
+        }
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    .footer-center { 
+        padding: 0 0 0 4%;
+        width: 96%;
+        background: #fff;
+        .footer-part {
+            float: left;
+            overflow: hidden;
+            width: calc(200% / 3);
+            height: 50px;
+            p {
+                line-height: 50px;
+                font-size: 1.2rem;
+                color: #999;
+                text-align: right;
+                span{
+                    color: #ff0000;
+                    font-size: 1.4rem;
+                }
+            }
+            p:nth-child(2){
+                margin-top: 5px;
+            }
+        }
+        
+        .footer-part:nth-child(2) {
+            width: calc(100% / 3);
+            text-align: center;
+            button {
+                width: 100%;
+                background: #0ae;
+                color: #fff;
+                font-size: 1.4rem;
+                line-height:50px;
+                border: none;
+            }
+        }
+    }
+}

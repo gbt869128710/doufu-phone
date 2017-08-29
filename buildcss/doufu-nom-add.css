@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 62.5%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i, em {
+  font-style: normal; }
+
+/*border-radius*/
+body {
+  background: #f2f2f2; }
+
+.content {
+  margin: 20px 4% 0 4%;
+  width: 92%; }
+  .content .content-ul {
+    position: relative;
+    background: #fff;
+    margin-bottom: 20px;
+    line-height: 36px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px; }
+    .content .content-ul .content-li {
+      position: relative;
+      margin: 0 4%;
+      width: 92%;
+      border-bottom: 1px solid #ccc; }
+      .content .content-ul .content-li .hint {
+        position: absolute;
+        right: 10px;
+        top: 0; }
+        .content .content-ul .content-li .hint p {
+          display: none;
+          float: right;
+          margin: 0 0 0 10px;
+          color: #ff0000;
+          font-size: 1.2rem; }
+        .content .content-ul .content-li .hint .gain {
+          float: right;
+          margin-top: 7px;
+          width: 70px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+          background: #f2f2f2;
+          border-radius: 2px;
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -o-border-radius: 2px;
+          -ms-border-radius: 2px; }
+      .content .content-ul .content-li input {
+        padding: 0 2%;
+        width: 96%;
+        font-size: 1.3rem;
+        color: #999;
+        line-height: 36px; }
+      .content .content-ul .content-li .code {
+        width: 96%; }
+      .content .content-ul .content-li input-placeholder {
+        color: #999; }
+      .content .content-ul .content-li ::-webkit-input-placeholder {
+        color: #999; }
+      .content .content-ul .content-li .choose-text {
+        padding: 0 2%;
+        font-size: 1.3rem;
+        color: #999;
+        line-height: 36px; }
+      .content .content-ul .content-li .trigon {
+        margin-top: 12px;
+        margin-right: 4%;
+        float: right;
+        width: 0;
+        height: 0;
+        border-top: 6px solid #999;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent; }
+    .content .content-ul .content-li:last-of-type {
+      border-bottom: none; }
+    .content .content-ul .choose-ul {
+      display: none;
+      overflow: auto;
+      padding: 0 4%;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 92%;
+      height: 148px;
+      background: #fff; }
+      .content .content-ul .choose-ul .choose-li {
+        padding: 0 2%;
+        border-bottom: 1px solid #ccc;
+        font-size: 1.3rem;
+        color: #999;
+        line-height: 36px; }
+      .content .content-ul .choose-ul .choose-li:last-of-type {
+        border-bottom: none; }
+  .content .popular-li-center {
+    overflow: hidden;
+    width: 92%;
+    padding: 0 4%; }
+    .content .popular-li-center a {
+      display: block;
+      text-align: center;
+      font-size: 1.4rem;
+      color: #fff;
+      line-height: 40px;
+      background: #00aaee;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -ms-border-radius: 4px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  box-shadow: 0px 0px 30px #ccc; }
+  footer .footer-center {
+    padding: 0 4%;
+    width: 92%;
+    background: #fff; }
+    footer .footer-center .footer-part {
+      float: left;
+      overflow: hidden;
+      width: calc(100% / 3);
+      height: 100px; }
+      footer .footer-center .footer-part a {
+        color: #999; }
+        footer .footer-center .footer-part a .footer-part-top {
+          width: 100%;
+          font-size: 2.4rem;
+          line-height: 35px;
+          text-align: center; }
+        footer .footer-center .footer-part a p {
+          text-align: center;
+          font-size: 1.3rem; }
+    footer .footer-center .footer-part:nth-child(3) a {
+      color: #00aaee; }
+      footer .footer-center .footer-part:nth-child(3) a .footer-part-top {
+        font-size: 3rem; }

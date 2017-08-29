@@ -1,0 +1,113 @@
+@import "base";
+body {
+    background: #f2f2f2;
+}
+
+.hunt {
+    margin: 0 0 45px 0;
+    width: 100%;
+    .hunt-aspect {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        .hunt-aspect-side {
+            padding: 10px 4%;
+            width: 92%;
+            border-bottom: 1px solid #ccc;
+            line-height: 18px;
+            font-size: 1.3rem;
+            background: #ffffff;
+            .back,.manage{
+                font-size: 1.3rem;
+                color: #666;
+                font-weight: inherit;
+            }
+            .manage{
+                float: right;
+                color: #00aaee;
+            }
+            .add{
+                display: block;
+                span{
+                    font-size: 1.4rem;
+                    color: #666;
+                }
+                .more{
+                    float: right;
+                }
+            }
+        }
+        .hunt-aspect-ul{
+            line-height:18px;
+            font-size: 1.3rem;
+            .hunt-aspect-li{
+            background: #ffffff;
+            margin-bottom: 10px;
+                .hunt-aspect-li-top{
+                padding: 10px 4%;
+                width: 92%;
+                border-bottom: 1px solid #ccc;
+                    
+                    p{
+                        margin-bottom: 5px;
+                        font-size: 1.4rem;
+                        color: #000;
+                        em{
+                            margin-left: 20%;
+                        }
+                        .more-all{
+                            float: right;
+                            line-height: 80px;
+                        }
+                        span{
+                            font-size: 1.4rem;
+                            color: #666;
+                            line-height: 16px;
+                        }
+                    }
+                    .site{
+                        margin-bottom: 0;
+                        u{
+                            color: #ff9700;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .hunt-aspect-li-bottom{
+                    padding: 10px 4%;
+                    width: 92%;
+                    overflow: hidden;
+                    .choose{
+                        float: left;
+                        width: 12px;
+                        height: 12px;
+                        margin-top: 2px;
+                        border: 1px solid #606060;
+                        color: transparent;
+                        text-align: center;
+                        line-height: 12px;
+                        font-size: 1.2rem;
+                    }
+                    .choose.h{
+                        color: #fff;
+                         border: 1px solid #ff9700;
+                        background: #ff9700;
+                    }
+                    i{
+                        float: left;
+                        font-size: 1.3rem;
+                        color: #000;
+                        font-weight: lighter;
+                    }
+                    em,a{
+                        float: right;
+                        margin-left: 10%;
+                        font-size: 1.3rem;
+                        color: #000;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+}
