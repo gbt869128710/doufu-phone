@@ -25,6 +25,7 @@ header {
         i.h{
             border-bottom: 1px solid #00aaee;
             color: #00aaee;
+            
         }
     }
 }
@@ -71,9 +72,7 @@ header {
             }
             .hunt-aspect-side-bottom{
                 padding: 10px 4%;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                text-align: right;
                 a{
                     margin: 0 2%;
                     padding: 0 2%;

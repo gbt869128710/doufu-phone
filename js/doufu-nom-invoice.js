@@ -53,15 +53,5 @@
                 $(".private").hide();
             }
         })
-        var sj = /^1[34578]\d{9}$/;
-        $(".phone").on("blur",function(){
-            var phone = $(".phone").val();
-            if (phone != "" && sj.test(phone)) {
-                $(this).siblings("p").hide();
-            }else{
-                $(this).siblings("p").show();
-            }
-        })
-
        
     })

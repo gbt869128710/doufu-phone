@@ -88,9 +88,7 @@ header {
               font-size: 1.4rem; }
       .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-bottom {
         padding: 10px 4%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center; }
+        text-align: right; }
         .hunt .hunt-aspect .hunt-aspect-side .hunt-aspect-side-bottom a {
           margin: 0 2%;
           padding: 0 2%;

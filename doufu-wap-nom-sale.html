@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-nom-sale.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+     <a href="" class="ask">&#xe613;申请售后</a>
+     <ul class="center-perfect">
+           <li class="put-top">您当前正在向服务商<span>笃信人力有限责任公司</span>申请售后服务，请填写申请内容，以便服务商在收到您的申请信息后，为您做出及时响应！</li>
+        <li class="perfect-row">
+            <i>*</i>
+            <span class="perfect-row-left">请填写申请描述：</span>
+            <textarea name="" id="" cols="30" rows="10" placeholder="请填写申请描述" maxlength="200"></textarea>
+        </li>
+         <li class="perfect-code-hint">
+         <span class="red">申请描述不为空</span>
+        </li>
+    </ul>
+    <div class="knob">
+        <a href="" class="affirm">取消</a>
+        <a href="" class="cancel">提交申请</a>
+    </div>
+    <p class="put">您已成功提交对服务：<span>有限公司注册</span>的售后申请，服务商将尽快与您联系处理，请您耐心等待！</p>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script>
+<script>
+$(function(){
+    $("textarea").on("blur",function(){
+        if($(this).text()==""){
+            $(".red").show();
+        }else{
+            $(".red").hide();
+        }
+    })
+})
+</script>
+<script>
+      //图片上传预览    IE是用了滤镜。
+        function previewImage(file,imgid)
+        {
+          var MAXWIDTH  = 80; 
+          var MAXHEIGHT = 80;
+//          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+//              div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+              var img = document.getElementById(imgid);
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+    </script>
