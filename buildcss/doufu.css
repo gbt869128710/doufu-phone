@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   font-family: 'Microsoft YaHei', 'iconfont';
-  font-size: 62.5%; }
+  font-size: 12px; }
 
 a,
 a:hover,
@@ -24,7 +24,7 @@ input {
   border: none;
   background: none; }
 
-i, em {
+i, em, cite {
   font-style: normal; }
 
 /*border-radius*/
@@ -324,87 +324,69 @@ header {
     color: #00aaee;
     line-height: 50px; }
 
-.box {
+.ppt-all {
   width: 100%;
-  height: 130px;
-  position: relative;
   overflow: hidden; }
-  .box .list {
-    width: 100%;
-    height: 130px;
-    position: absolute;
-    left: 50%; }
-    .box .list ul li {
-      position: absolute;
-      top: 0;
-      left: 0;
-      list-style: none;
-      opacity: 0;
-      transition: all 0.3s ease-out; }
-      .box .list ul li a img {
-        width: 80%;
-        height: 130px;
-        border: none;
-        float: left; }
-    .box .list ul .p1 {
-      transform: translate3d(-224px, 0, 0) scale(0.81); }
-    .box .list ul .p2 {
-      transform: translate3d(-108%, 0, 0) scale(0.81);
-      transform-origin: 0 50%;
-      opacity: 0.8;
-      z-index: 2; }
-    .box .list ul .p3 {
-      transform: translate3d(-40%, 0, 0) scale(1);
-      z-index: 3;
-      opacity: 1; }
-    .box .list ul .p4 {
-      transform: translate3d(24%, 0, 0) scale(0.81);
-      transform-origin: 100% 50%;
-      opacity: 0.8;
-      z-index: 2; }
-    .box .list ul .p5 {
-      transform: translate3d(250%, 0, 0) scale(0.81); }
-    .box .list ul .p6 {
-      transform: translate3d(896px, 0, 0) scale(0.81); }
-    .box .list ul .p7 {
-      transform: translate3d(1120px, 0, 0) scale(0.81); }
-  .box .btn {
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    width: 60px;
-    height: 100px;
-    line-height: 100px;
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    background: rgba(0, 255, 0, 0.5);
-    cursor: pointer; }
-  .box .next {
-    right: 0; }
-  .box .buttons {
-    position: absolute;
-    width: 1200px;
-    height: 30px;
-    bottom: -20px;
-    left: 50%;
-    margin-left: -600px;
-    text-align: center;
-    padding-top: 10px; }
-    .box .buttons a {
-      display: inline-block;
-      width: 35px;
-      height: 5px;
-      padding-top: 4px;
-      cursor: pointer; }
-      .box .buttons a span {
-        display: block;
-        width: 35px;
-        height: 1px;
-        background: red; }
-      .box .buttons a .blue {
-        background: blue; }
+
+#featured-area {
+  height: 150px;
+  width: 88%;
+  margin: 0 auto; }
+
+.roundabout-holder {
+  list-style: none;
+  width: 100%;
+  height: 300px;
+  margin: 0px auto; }
+
+.roundabout-moveable-item {
+  font-size: 12px !important;
+  height: 150px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #f9f9f9;
+  top: 25px; }
+
+.roundabout-moveable-item img {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 0; }
+
+.roundabout-in-focus {
+  cursor: auto;
+  width: 100%; }
+
+.roundabout-in-focus:hover {
+  -webkit-box-shadow: 0px 0px 20px #787878;
+  -moz-box-shadow: 0px 0px 20px #787878;
+  background: #f9f9f9; }
+
+.roundabout-holder span {
+  display: none; }
+
+.roundabout-in-focus:hover span {
+  display: inline;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 8px 20px;
+  background: #f9f9f9;
+  color: #3366cc;
+  z-index: 999;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topLeft: 5px;
+  border-left: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa; }
+
+.roundabout a:active, .roundabout a:focus, .roundabout a:visited {
+  outline: none;
+  text-decoration: none; }
+
+.roundabout li {
+  margin: 0; }
 
 .nav {
   margin: 15px 4%;
@@ -425,7 +407,8 @@ header {
       text-overflow: ellipsis;
       white-space: nowrap;
       text-align: center;
-      color: #333; }
+      color: #333;
+      font-size: 1.3rem; }
     .nav li p {
       margin: 5px auto;
       text-align: center;
@@ -524,11 +507,25 @@ header {
     width: 70px;
     height: 70px; }
 
+.services .popular-center li .popular-li-center {
+  float: right;
+  width: calc(98% - 70px); }
+  .services .popular-center li .popular-li-center p {
+    width: 100%; }
+    .services .popular-center li .popular-li-center p i {
+      margin-left: 6%; }
+    .services .popular-center li .popular-li-center p u {
+      text-decoration: none;
+      color: #999;
+      font-size: 1.3rem;
+      display: inline-block;
+      width: calc(98% - 70px); }
+
 .services .popular-center li a {
   float: right;
   color: #00aaee;
   font-size: 1.3rem;
-  line-height: 80px; }
+  line-height: 26px; }
 
 .bottom {
   margin-top: -15px;

@@ -1,0 +1,467 @@
+@charset "UTF-8";
+html {
+  /*font:14px/1.2 Arial,"Hiragino Sans GB","寰蒋闆呴粦","瀹嬩綋";*/ }
+
+html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/*common&rest*/
+input, select {
+  outline: none; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0; }
+
+.no_highlight, a, input, select {
+  -webkit-tap-highlight-color: transparent; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+.td {
+  display: table-cell; }
+
+.clearfix:after {
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+html {
+  height: 100%;
+  background-color: #12052f; }
+
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  color: #9261ff;
+  font-size: 14px;
+  font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased; }
+
+a, a:hover {
+  color: #fff; }
+
+em {
+  font-style: normal; }
+
+/*盒模型*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+/*上下拉动滚动条时卡顿、慢*/
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
+
+/*长时间按住页面出现闪退*/
+* {
+  -webkit-touch-callout: none; }
+
+.wrap .content {
+  padding-top: 0.064rem; }
+
+.fosus {
+  width: 100%;
+  height: 15.36rem;
+  margin: 0 auto;
+  background: url(../images/banner.jpg) no-repeat top center;
+  background-size: 100% 100%; }
+
+.banner {
+  position: relative;
+  height: 12.01067rem;
+  background-size: 100% 100%; }
+  .banner .times {
+    position: absolute;
+    left: 50%;
+    top: 7.40267rem;
+    width: 8.4rem;
+    height: 1.04533rem;
+    line-height: 1.04533rem;
+    margin-left: -4.2rem;
+    color: #dc390c;
+      border: 0.064rem solid #ff251b;
+    border-radius: 0.522665rem;
+    font-size: 0.85333rem;
+    text-align: center; }
+h1{
+    position: absolute;
+    left: 50%;
+    top: 8.8rem;
+    width: 12.4rem;
+    height: 1.04533rem;
+    line-height: 1.04533rem;
+    margin-left: -6.2rem;
+   color: #FFD47B;
+    font-size: 0.85333rem;
+    text-align: center;
+    font-weight: inherit;
+}
+  .banner .lagou {
+    position: absolute;
+    top: 0;
+    right: 0.85333rem;
+    width: 2.00533rem; }
+
+.logos {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 3.072rem;
+  overflow: hidden; }
+  .logos .light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.72533rem;
+    display: none; }
+  .logos .swiper-container:after {
+    position: absolute;
+    top: 0.59733rem;
+    right: 0;
+    z-index: 2;
+    content: url(../images/top-logo-shadow.png);
+    width: 1.088rem;
+    height: 2.13333rem;
+    pointer-events: none; }
+.wrapper{
+    width: 100%;
+}
+.scroller{
+    margin: 0px auto;
+}
+  .logos .list {
+    padding: 0.29867rem 0;}
+    .logos .list li {
+      width: 2.752rem;
+      height: 3.072rem;
+      padding: 0.448rem 0.49067rem 0.448rem 0.49067rem;
+      position: relative;
+      float: left;
+      text-align: center;
+      box-sizing: border-box;
+      background: url(../images/top-logo-bg.png) no-repeat center top;
+      background-size: 2.752rem 3.072rem; }
+      .logos .list li a {
+        width: 1.68rem;
+    height: 1.68rem;
+    position: absolute;
+    left: 52%;
+    top: 48%;
+        margin: -1.06667rem 0 0 -0.88533rem;
+        z-index: 2;
+        display: block; }
+      .logos .list li img {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        background: #fff;
+border-radius: 0.2rem;}
+      .logos .list li span {
+        position: absolute;
+        right: 0.48533rem;
+        top: 0.11333rem;
+        z-index: 3;
+        width: 1.25867rem;
+        height: 1.32267rem;
+}
+.logos .list li:nth-child(1) span {
+        background: url("../images/top_small1.png") no-repeat;
+        background-size: 100%; }
+.logos .list li:nth-child(2) span {
+        background: url("../images/top_small2.png") no-repeat;
+        background-size: 100%; }
+.logos .list li:nth-child(3) span {
+        background: url("../images/top_small3.png") no-repeat;
+        background-size: 100%; }
+
+.fixed {
+  position: fixed; }
+
+.logos.fixed .list:before {
+  content: '';
+  width: 100%;
+  height: 2.048rem;
+  background: #121015;
+  position: absolute;
+  left: 0;
+  top: 0.64rem; }
+
+.content {
+  background: #1f1e24 url(../images/content-bg.png) no-repeat center top;
+  background-size: 100% 68.90667rem; }
+
+.box {
+  position: relative;
+  width: 15.70133rem;
+  height: 20.77867rem;
+  margin: 0 auto;
+  padding-bottom: 1.17333rem;
+  background: url(../images/box-bg.png) no-repeat center top;
+  background-size: 15.70133rem 20.48rem; }
+  .box span.top_icon {
+    width: 3.28533rem;
+    height: 3.28533rem;
+    position: absolute;
+    right: 0.02133rem;
+    top: 0.02133rem;
+    z-index: 13;
+    background-size: 100% 100%; }
+    .box span.top_icon em {
+      width: 3.28533rem;
+      height: 3.28533rem;
+      display: block;
+      z-index: 1;}
+.box:nth-child(1) span.top_icon em {
+      background: url("../images/top_big1_2.png") no-repeat;
+      background-size: 100% 100%; }
+.box:nth-child(2) span.top_icon em {
+      background: url("../images/top_big2_2.png") no-repeat;
+      background-size: 100% 100%; }
+.box:nth-child(3) span.top_icon em {
+      background: url("../images/top_big3_2.png") no-repeat;
+      background-size: 100% 100%; }
+  .box .company_box {
+    padding: 1.344rem 0 0 0.91733rem;
+    box-sizing: border-box; }
+    .box .company_box .company_logo {
+      float: left;
+      position: relative;
+      display: block;
+      width: 5.46133rem;
+      height: 5.504rem;
+      padding: 0.448rem 0 0 0.42667rem;
+      background: url(../images/box-logo-bg.png) no-repeat center top;
+      background-size: 5.46133rem 5.504rem;
+      box-sizing: border-box; }
+      .box .company_box .company_logo img {
+        width: 4.584rem;
+        height: 4.544rem;
+        display: block;
+        border-radius: 0.29867rem;
+        overflow: hidden;
+        background: #fff; }
+    .box .company_box .right {
+      float: left;
+      width: 8.74667rem; }
+      .box .company_box .right .top .name {
+        display: block;
+        width: 8.10667rem;
+        height: 1.36533rem;
+        line-height: 1.36533rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 0.72533rem;
+        color: #f83501; }
+      .box .company_box .right .top .slogin {
+        width: 8.74667rem;
+        height: 0.85333rem;
+        line-height: 0.85333rem;
+        margin: 0 0 0 -0.29867rem;
+        color: #f83501;
+        font-size: 0.53333rem;
+        opacity: 0.7;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .box .company_box .circles {
+      margin: 0.42667rem 0 0 0.23467rem;
+      color: #fff; }
+      .box .company_box .circles .circle {
+        position: relative;
+        float: left;
+        width: 2.688rem;
+        height: 2.688rem;
+        text-align: center; }
+      .box .company_box .circles .circle canvas {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        vertical-align: top;
+        background: url("../images/circles-bg.png") no-repeat 0 0;
+        background-size: 2.66667rem 2.66667rem; }
+      .box .company_box .circles .circle strong {
+        position: absolute;
+        top: -16px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 0.85333rem;
+        font-weight: normal;
+        color: #fff; }
+      .box .company_box .circles .circle strong i {
+        margin-left: 2px;
+        font-style: normal;
+        font-size: 0.8em;
+        line-height: 2.688rem;
+        font-weight: normal;
+        color: #fff; }
+      .box .company_box .circles span {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        line-height: 0.584rem;
+        padding: 0.18533rem 0.17067rem;
+        border-radius: 0.768rem;
+        border: solid 1px rgba(255, 255, 225, 0.5);
+        box-sizing: border-box;
+        text-align: center;
+        color: #fff;
+        font-size: 0.34133rem; }
+      .box .company_box .circles .time {
+        margin-left: 0.81067rem; }
+        .box .company_box .circles .time strong i {
+          font-size: 0.7em; }
+        .box .company_box .circles .time .hover {
+          position: absolute;
+          top: 53px;
+          left: 57px;
+          z-index: 3;
+          width: 147px;
+          height: 37px;
+          line-height: normal;
+          font-size: 12px;
+          line-height: 37px;
+          background-color: #6a4ecc;
+          border-radius: 50px;
+          box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.2); }
+  .box .tag {
+    height: 1.984rem;
+    padding: 0.78933rem 1.04533rem 0.21333rem 1.04533rem;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: content-box; }
+    .box .tag li {
+      float: left;
+      height: 0.91733rem;
+      line-height: 0.87467rem;
+      margin: 0 0.59733rem 1.408rem 0;
+      padding: 0 0.34133rem;
+      text-align: center;
+      font-size: 0.448rem;
+      color: #ffcc5e;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 192, 94, 0.4); }
+      .box .tag li:last-child {
+        margin-right: 0; }
+  .box .jobs_box {
+    width: 13.76rem;
+    margin: 0 auto; }
+    .box .jobs_box .jobs {
+      height: 6.31467rem;
+      overflow: hidden;
+      margin-bottom: 0.78933rem; }
+    .box .jobs_box .jobs a {
+      float: left;
+      width: 6.592rem;
+      height: 1.70667rem;
+      margin: 0 0.576rem 0.42667rem 0;
+      padding: 0 0.32rem 0 0.27733rem;
+      line-height: 1.57867rem;
+      font-size: 0.512rem;
+      color: #ff251b;
+      border: 0.064rem solid #ff251b;
+      border-radius: 0.17067rem;
+      background: #fff;
+      box-sizing: border-box; }
+      .box .jobs_box .jobs a:nth-child(2n) {
+        margin-right: 0; }
+      .box .jobs_box .jobs a.disabled {
+        color: #400d0c;
+        background: #f83501;
+        background-color: rgba(248, 53, 1, 0.36);
+        filter: Alpha(opacity=36);
+        border: none; }
+        .box .jobs_box .jobs a.disabled .salary {
+          color: #400d0c; }
+          .box .jobs_box .jobs a.disabled .salary:after {
+            border-left: 0.21333rem solid #400d0c; }
+      .box .jobs_box .jobs a .name {
+        float: left;
+        width: 3.11467rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .box .jobs_box .jobs a .salary {
+        padding: 0 0.32rem 0 0;
+        float: right;
+        color: #ff251b;
+        position: relative;
+        font-size: 0.55467rem; }
+        .box .jobs_box .jobs a .salary:after {
+          width: 0;
+          height: 0;
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0.55467rem;
+          border-top: 0.21333rem solid transparent;
+          border-left: 0.21333rem solid #ff251b;
+          border-bottom: 0.21333rem solid transparent; }
+    .box .jobs_box hr {
+      width: 1.344rem;
+      border: none;
+      border-top: solid 0.08533rem #372663;
+      display: none; }
+    .box .jobs_box .more_btn {
+      display: block;
+      width: 6.144rem;
+      height: 1.74933rem;
+      line-height: 1.536rem;
+      margin: 0 auto 0;
+      text-align: center;
+      font-size: 0.55467rem;
+      font-weight: bold;
+      color: #f83501;
+      border: 0.10667rem solid rgba(248, 53, 1, 0.3);
+      border-radius: 1.74933rem;
+      box-sizing: border-box; }
+      .box .jobs_box .more_btn span {
+        display: none; }
+
+.footer {
+  width: 100%;
+  height: 4.928rem;
+  margin: 0 auto;
+  background: #1f1e24 url(../images/footer-bg.png) no-repeat center top;
+  background-size: 100%; }
+  .footer p {
+    display: none; }

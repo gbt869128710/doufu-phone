@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.range.css">
+    <link rel="stylesheet" href="css/doufu-wap-survey.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-center">
+            <div class="logo">
+                <img src="images/logo1.png" alt="">
+            </div>
+            <div class="enter">登录</div>
+            <div class="enroll">注册</div>
+        </div>
+    </header>
+    <div class="jqContent">
+        
+        <div class="mainCss">
+           <div class="headerCss">
+            <ul class="nav_block clearfix">
+                <li>
+                    <a href="/">豆腐网</a>
+                    <s class="arrowr"></s>
+                </li>
+                <li>
+                    <a href="#" class="active">调查问卷</a>
+                </li>
+            </ul>
+        </div>
+            <div class="mainInner">
+                <div class="surveyhead">
+                    <h1>《第一次亲密接触》调查问卷</h1>
+                    <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                    <div class="surveydescription">
+                        <p>小豆在这给各位请安了！为了更好的为用户服务，让用户更好的了解、使用豆腐网，小豆绞尽脑汁设计了本次用户使用调查问卷，并给他命名为“第一次亲密接触”，您用五六分钟，让小豆全身颤抖吧。</p>
+                    </div>
+                    <div class="surveycontent">
+                        <div class="surveycontent-ul">
+                            <h2>先来四个冷盘</h2>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                    <div class="left">
+                                        <span class="div_topic_question">1</span>.&nbsp;<span id="divTitle1" class="div_title_question">您是如何知道豆腐网？
+                                    <span class="req">&nbsp;*</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q1_1" type="radio" name="q1" data="1">
+                                            <label for="q1_1">百度推广的广告 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q1_2" type="radio" name="q1" data="2">
+                                            <label for="q1_2">朋友推荐 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q1_3" type="radio" name="q1" data="3">
+                                            <label for="q1_3">微信朋友圈 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q1_4" type="radio" name="q1" data="4">
+                                            <label for="q1_4">误打误撞 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q1_5" type="radio" name="q1" data="5">
+                                            <label for="q1_5">电话广告 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q1_6" type="radio" name="q1" data="6">
+                                            <label for="q1_6">网络</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                        <span class="div_topic_question">2</span>.&nbsp;<span id="divTitle1" class="div_title_question">豆腐网给您的整体感觉是？<span class="req">&nbsp;*</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q2_1" type="radio" name="q2" data="1">
+                                            <label for="q2_1">非常棒</label>
+                                            <input id="q2_2" type="radio" name="q2" data="2">
+                                            <label for="q2_2">很棒</label>
+                                            <input id="q2_3" type="radio" name="q2" data="3">
+                                            <label for="q2_3">一般棒</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">3</span>.&nbsp;<span id="divTitle1" class="div_title_question">是什么让你在浮躁的年代耐心注册了豆腐网？<span class="req">&nbsp;*</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q3_1" type="radio" name="q3" data="1">
+                                            <label for="q3_1">是价格比市场更低 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q3_2" type="radio" name="q3" data="2">
+                                            <label for="q3_2">是服务比同行更好 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q3_3" type="radio" name="q3" data="3">
+                                            <label for="q3_3">是颜值更符合时代 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q3_4" type="radio" name="q3" data="4">
+                                            <label for="q3_4">是朋友耐心劝说后
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q3_5" type="radio" name="q3" data="5">
+                                            <label for="q3_5">是我喝醉了，稀里糊涂
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q3_6" type="radio" name="q3" data="6">
+                                            <label for="q3_6">是无处可去被迫选择豆腐
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">4</span>.&nbsp;<span id="divTitle1" class="div_title_question">您工作多久了？<span class="req">&nbsp;*</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q4_1" type="radio" name="q4" data="1">
+                                            <label for="q4_1">学生</label>
+                                            <input id="q4_2" type="radio" name="q4" data="2">
+                                            <label for="q4_2">1-3年
+                                            </label>
+                                            <input id="q4_3" type="radio" name="q4" data="3">
+                                            <label for="q4_3">3-5年
+                                            </label>
+                                            <input id="q4_4" type="radio" name="q4" data="4">
+                                            <label for="q4_4">5-7年
+                                            </label>
+                                            <input id="q4_5" type="radio" name="q4" data="5">
+                                            <label for="q4_5">7年以上
+                                            </label>
+                                            <input id="q4_6" type="radio" name="q4" data="6">
+                                            <label for="q4_6">一直在失业，准备自己干
+
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>冰啤酒一箱</h2>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">5</span>.&nbsp;<span id="divTitle1" class="div_title_question">您经常在豆腐网使用什么服务？<span class="req">&nbsp;*</span>
+                                    <span class="qtypetip">&nbsp;[多选题]</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q5_1" type="checkbox" name="q5" data="1">
+                                            <label for="q5_1">工商注册 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_2" type="checkbox" name="q5" data="2">
+                                            <label for="q5_2">财税代理 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_3" type="checkbox" name="q5" data="3">
+                                            <label for="q5_3">社保服务</label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_4" type="checkbox" name="q5" data="4">
+                                            <label for="q5_4">职称评定 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_5" type="checkbox" name="q5" data="5">
+                                            <label for="q5_5">资质代办 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_6" type="checkbox" name="q5" data="6">
+                                            <label for="q5_6">商标注册 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_7" type="checkbox" name="q5" data="7">
+                                            <label for="q5_7">免费的专业咨询</label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_8" type="checkbox" name="q5" data="8">
+                                            <label for="q5_8">专业知识库</label>
+                                        </li>
+                                        <li>
+                                            <input id="q5_9" type="checkbox" name="q5" data="9">
+                                            <label for="q5_9">专业工具箱</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>烧烤来咯</h2>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">6</span>.&nbsp;<span id="divTitle1" class="div_title_question">告诉小豆，您向身边的朋友、同事推荐豆腐网的可能性到底有多大？<span class="req">&nbsp;*</span>
+                                    </span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <p>（别在乎我的自尊，大胆的说出您的内心，我好紧张！）</p>
+                                    <br/>
+                                    <p>推荐意愿</p>
+                                    <p style="margin-top:10px">
+                                        <span>不可能推荐</span>
+                                        <span>不确定</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>非常愿意推荐</span>
+                                    </p>
+                                    <div class="time clearfix">
+                                        <div class="demo fl">
+                                            <input type="hidden" value="" class="single-slider none">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">7</span>.&nbsp;<span id="divTitle1" class="div_title_question">您认为，豆腐网哪些还有不足，给您带来了不便?
+                                    <span class="req">&nbsp;*</span>
+                                    <span class="qtypetip">&nbsp;[多选题]</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q6_1" type="checkbox" name="q6" data="1">
+                                            <label for="q6_1">产品不够丰富 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q6_2" type="checkbox" name="q6" data="2">
+                                            <label for="q6_2">价格偏高</label>
+                                        </li>
+                                        <li>
+                                            <input id="q6_3" type="checkbox" name="q6" data="3">
+                                            <label for="q6_3">服务质量有待提升</label>
+                                        </li>
+                                        <li>
+                                            <input id="q6_4" type="checkbox" name="q6" data="4">
+                                            <label for="q6_4">BUG太多，产品功能有缺陷</label>
+                                        </li>
+                                        <li>
+                                            <input id="q6_5" type="checkbox" name="q6" data="5">
+                                            <label for="q6_5">产品体验较差</label>
+                                        </li>
+                                        <li>
+                                            <input id="q6_6" type="checkbox" name="q6" data="6">
+                                            <label for="q6_6">其他
+                                                <input type="text">
+                                            </label>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">8</span>.&nbsp;<span id="divTitle1" class="div_title_question">较之传统的服务项目被互联网化，您会选择？
+                                    <span class="req">&nbsp;*</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q7_1" type="radio" name="q7" data="1">
+                                            <label for="q7_1">继续找线下服务商，即使冒着被宰，被骗的危险
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q7_2" type="radio" name="q7" data="2">
+                                            <label for="q7_2">抛弃传统的服务商，支持线上平台 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q7_3" type="radio" name="q7" data="3">
+                                            <label for="q7_3">无所谓，线上线下都可以，只要服务有保证，价格不离谱 </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">9</span>.&nbsp;<span id="divTitle1" class="div_title_question">未来这一年，您会开创属于自己的事业吗（创业）？
+                                    <span class="req">&nbsp;*</span>
+                                    </span>
+                                    <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q8_1" type="radio" name="q8" data="1">
+                                            <label for="q8_1">你咋知道
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q8_2" type="radio" name="q8" data="2">
+                                            <label for="q8_2">有贼心，没贼胆 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q8_3" type="radio" name="q8" data="3">
+                                            <label for="q8_3">创业哪有打工好玩</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>结束了，开房吧！</h2>
+                            <div class="div_question" id="div1">
+                                <div class="div_title_question_all">
+                                   <div class="left">
+                                    <span class="div_topic_question">10</span>.&nbsp;<span id="divTitle1" class="div_title_question">小豆就想知道，您到底是想付费（用户）还是免费（用户）？
+                                    <span class="req">&nbsp;*</span>
+                                    </span>
+                                    
+                                        <span class="req choose">请选择选项</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="green">L</span>
+                                    </div>
+                                </div>
+                                <div class="div_table_radio_question" id="divquestion1">
+                                    <ul class="ulradiocheck">
+                                        <li>
+                                            <input id="q9_1" type="radio" name="q9" data="1">
+                                            <label for="q9_1">已经是付费用户了
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q9_2" type="radio" name="q9" data="2">
+                                            <label for="q9_2">还没注册，马上注册 </label>
+                                        </li>
+                                        <li>
+                                            <input id="q9_3" type="radio" name="q9" data="3">
+                                            <label for="q9_3">已注册，还未购买过任何服务产品
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q9_4" type="radio" name="q9" data="3">
+                                            <label for="q9_4">已经加入购物车了
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q9_5" type="radio" name="q9" data="3">
+                                            <label for="q9_5">慎重考虑之中，容我想想
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input id="q9_6" type="radio" name="q9" data="3">
+                                            <label for="q9_6 ">不了，我不用支付宝，也没有微信，我就是路过看看热闹的
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="refer">
+                <p class="refer-choose">您还有<span>0</span>项没有填选</p>
+                <input type="button" value="提交" class="refer-btn">
+                </div>
+                <div class="none" style="height:60px; width:100%"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.range.js"></script>
+<script type="text/javascript" src="js/doufu-survey.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        changeY();
+
+        function changeY() {
+            var year = $('#year').text().replace(/[^0-9]/ig, "")
+            var month = $('#month').text().replace(/[^0-9]/ig, "")
+            var days = totalDays(year, month);
+            var dayArr = [];
+            for (var i = 1; i <= 10; i++) {
+                dayArr.push(i);
+            }
+            var last = parseInt(dayArr[dayArr.length - 1]);
+            $('.demo').children().remove();
+            var div = '<input type="hidden" value="" class="single-slider none">';
+            $('.demo').html(div)
+                // 
+            $('.single-slider').jRange({
+                from: 1,
+                to: last,
+                step: 1,
+                scale: dayArr,
+                format: '%s',
+                width: 190,
+                showLabels: true,
+                snap: true
+            });
+        }
+
+        //一个月的总天数
+        function totalDays(years, months) {
+            var d = new Date(years, months, 0);
+            return d.getDate();
+        }
+    })
+</script>
+<script>
+    window._bd_share_config = {
+        common : {
+            bdText : '自定义分享内容',    
+            bdDesc : '自定义分享摘要',    
+            bdUrl : '自定义分享url地址',     
+            bdPic : '自定义分享图片'
+        },
+        share : [{
+            "bdSize" : 24
+        }],
+    }
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
